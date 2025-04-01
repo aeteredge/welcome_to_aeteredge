@@ -1,0 +1,18 @@
+{
+  "data": {
+    "type": "sale-operation",
+    "attributes": {
+      "card_number": "5123817234060000",
+      "card_holder": "John Wick",
+      "cvv": "123",
+      "exp_month": "12",
+      "exp_year": "30",
+      "browser_info": {
+        "browser_accept_header": "text/html,application/xhtml+xml,application/xml",
+        "browser_java_enabled": false,
+        "browser_language": "en-US",
+        "browser_user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36 EdgA/132.0.0.0"
+      }
+    }
+  }
+}

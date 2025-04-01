@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "21d3b7c07f4f48088f795",
+      "description": "deposit",
+      "currency": "EUR",
+      "amount": 15,
+      "service": "openbanking_eur_hpp",
+      "return_url": "https://app.example.com",
+      "callback_url": "https://app.example1.com",
+      "return_urls": {
+        "success": "https://app.example3.com",
+        "fail": "https://app.example4.com",
+        "pending": "https://app.example5.com"
+      },
+      "test_mode": false,
+      "customer": {
+        "reference_id": "4333",
+        "description": "Hello deposit",
+        "email": "Jake1@tutamail.com",
+        "name": "Jake baba",
+        "phone": "48489123212",
+        "address": {
+          "country": "DE",
+          "post_code": "hola",
+          "region": "hola",
+          "city": "hola",
+          "street": "hola",
+          "full_address": "hola"
+        },
+        "date_of_birth": "1991-12-30",
+        "metadata": {
+          "ip": "192.36.xx.72"
+        }
+      },
+      "metadata": {
+        "url": "https://xxxxxx.com"
+      }
+    }
+  }
+}

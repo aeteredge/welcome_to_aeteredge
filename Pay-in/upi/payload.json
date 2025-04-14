@@ -31,6 +31,9 @@
         "success": "https://example.com/thank-you-page",
         "fail": "https://example.com/sorry-page",
         "pending": "https://example.com/wait-for-it-page"
+      },
+      "metadata": {
+        "url": "https://example3.com"
       }
     }
   }

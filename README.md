@@ -50,6 +50,15 @@ Inside your dashboard, under **Settings > Integration**, you’ll find the crede
 📚 We recommend always utilizing flows related to the **Private API** for optimal performance.
 [https://dashboard.aeteredge.com/docs/en/integration/#private-api](https://dashboard.aeteredge.com/docs/en/integration/#private-api)
 
+**🔐 Private API Integration**
+
+📌 The URL is [https://api.aeteredge.com/payment-invoices](https://api.aeteredge.com/payment-invoices)  
+🔑 Authentication type: **BasicAuth**  
+📊 You can view this information in the dashboard under **Settings > Integration**
+
+![Private API Screenshot](.assets/PrivateApi.jpg)
+
+
 **🧪 Sandbox & Live Environments:**  
 📚 The **same API** is used for both environments.  
 To run sandbox transactions, simply include this in your payload:

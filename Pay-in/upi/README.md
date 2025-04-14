@@ -39,9 +39,9 @@ If any of them is missing, the request will be rejected.
 
 ### 🏠 Address (nested under `customer.address`)
 
-| JSON Key        | Description                                                                 |
+| JSON Key         | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
-| `country`        | Country code (must be `"IN"` for India).                                     |
+| `country`        | Country code (must be `"IN"` for India).                                    |
 | `city`           | City name.                                                                  |
 | `full_address`   | Full formatted address string.                                              |
 | `post_code`      | Postal code.                                                                |
@@ -56,6 +56,7 @@ If any of them is missing, the request will be rejected.
 |------------------------------------|-------------------------------------------------------------------------|
 | `customer.metadata.ip`             | IP address of the customer.                                             |
 | `customer.metadata.client_agent`   | Browser or user-agent string.                                           |
+| `metadata.url`                     | URL of the company.                                                     |
 
 ---
 

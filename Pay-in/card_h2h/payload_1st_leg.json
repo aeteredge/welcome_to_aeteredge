@@ -6,7 +6,7 @@
       "test_mode": true,
       "currency": "EUR",
       "amount": 10,
-      "reference_id": "a30ebec4-035c-4fc5-8c48-b525ca601f37",
+      "reference_id": "a30ebec4-035c-4fc5-8c48-b525ca781f37",
       "description": "Invoice Example",
       "flow": "charge",
       "customer": {

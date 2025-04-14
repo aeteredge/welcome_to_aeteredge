@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "service": "bank_transfer_clp",
+      "currency": "CLP",
+      "amount": 99997,
+      "reference_id": "64361",
+      "test_mode": true,
+      "fields": {
+        "bank_code": "1234",
+        "account_type": "CC",
+        "bank_account": "420895871234",
+        "beneficiary_document_type": "CE",
+        "beneficiary_document_id": "42089587",
+        "beneficiary_name": "John Doe",
+        "sender_full_name": "John Wick"
+      },
+      "options": {
+        "auto_process": false
+      },
+      "metadata": {
+        "url": "https://example.com"
+      }
+    }
+  }
+}

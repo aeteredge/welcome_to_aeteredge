@@ -1,0 +1,45 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "546",
+      "description": "deposit",
+      "currency": "BRL",
+      "amount": 99997,
+      "service": "pix_brl_invoice",
+      "return_url": "https://app.example.com",
+      "callback_url": "https://app.example2.com",
+      "return_urls": {
+        "fail": "https://example.com/sorry-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "success": "https://example.com/thank-you-page"
+      },
+      "service_fields": {
+        "cpf_number": "12345678909"
+      },
+      "test_mode": true,
+      "customer": {
+        "reference_id": "c592d-4b16edddd",
+        "individual_tax_id": "12345678909",
+        "name": "John Wick",
+        "email": "johnwick@outlook.com",
+        "phone": "5511916645678",
+        "date_of_birth": "1999-09-28",
+        "address": {
+          "country": "BR",
+          "post_code": "01001000",
+          "region": "Sao Paulo",
+          "city": "Sao Paulo",
+          "street": "Sao Paulo",
+          "full_address": "Sao Paulo"
+        },        
+        "metadata": {
+          "ip": "177.10.45.72"
+        }
+      },
+      "metadata": {
+        "url": "https://example3.com"
+      }
+    }
+  }
+}

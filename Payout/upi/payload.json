@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "service": "upi_inr",
+      "currency": "INR",
+      "amount": 10000,
+      "reference_id": "998962323555",
+      "customer": {
+        "reference_id": "5d5ff1b2-3f7e-4fd7-fea6c929e8",
+        "phone": "915798562312",
+        "email": "johnwick@gmail.com"
+      },
+      "test_mode": true,
+      "fields": {
+        "vpa": "John@wick",
+        "account_number": "5689231245",
+        "beneficiary_full_name": "John Wick",
+        "beneficiary_address": "Street 1 No. 45 ",
+        "ifsc_bank_code": "SBIN0001111",
+        "pan_number": "ABCDE1234F"
+      },
+      "options": {      
+        "auto_process": false
+      },
+      "metadata": {
+        "url": "https://example.com"
+      }
+    }
+  }
+}

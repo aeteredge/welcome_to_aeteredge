@@ -8,7 +8,7 @@
       "reference_id": "4861ee0a-9b3b-408d-9e99-236938920fec",
       "description": "payout",
       "options": {
-        "auto_process": true
+        "auto_process": false
       },
       "fields": {
         "card_number": "5123817234060000"
@@ -16,7 +16,7 @@
       "context": {
         "card": {
           "exp_year": "2030",
-          "exp_month": "08"
+          "exp_month": "09"
         }
       },
       "customer": {
@@ -28,10 +28,12 @@
           "region": "Bracelona",
           "post_code": "08015",
           "full_address": " Barcelona, 08015, ES"
+        },
+        "metadata": {
+          "url": "https://example.com"
         }
       },
       "test_mode": true
     }
   }
 }
-

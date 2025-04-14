@@ -2,40 +2,40 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
-      "reference_id": "21d3b7c07f4f48088f795",
-      "description": "deposit",
+      "reference_id": "54acd6100879b6c49f06a270a73af1cb",
+      "description": "Digital Purchase",
       "currency": "EUR",
       "amount": 15,
       "service": "openbanking_eur_hpp",
-      "return_url": "https://app.example.com",
-      "callback_url": "https://app.example1.com",
+      "return_url": "https://example.com",
+      "callback_url": "https://example2.com",
       "return_urls": {
-        "success": "https://app.example3.com",
-        "fail": "https://app.example4.com",
-        "pending": "https://app.example5.com"
+        "success": "https://example.com/thank-you-page",
+        "fail": "https://example.com/sorry-page",
+        "pending": "https://example.com/wait-for-it-page"
       },
       "test_mode": false,
       "customer": {
-        "reference_id": "4333",
-        "description": "Hello deposit",
-        "email": "Jake1@tutamail.com",
-        "name": "Jake baba",
-        "phone": "48489123212",
+        "reference_id": "6263",
+        "description": "Digital Purchase",
+        "email": "johnwick@gmail.com",
+        "name": "John Wick",
+        "phone": "31657503000",
+        "date_of_birth": "1984-05-22",
         "address": {
-          "country": "DE",
-          "post_code": "hola",
-          "region": "hola",
-          "city": "hola",
-          "street": "hola",
-          "full_address": "hola"
-        },
-        "date_of_birth": "1991-12-30",
+          "country": "NL",
+          "post_code": "8244DN",
+          "region": "Flevoland",
+          "city": "Lelystad",
+          "street": "Stavorenstr31",
+          "full_address": "Stavorenstr31"
+        },        
         "metadata": {
-          "ip": "192.36.xx.72"
+          "ip": "240.164.189.96"
         }
       },
       "metadata": {
-        "url": "https://xxxxxx.com"
+        "url": "www.example3.com"
       }
     }
   }

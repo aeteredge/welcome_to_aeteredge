@@ -1,0 +1,22 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "service": "pix_brl",
+      "currency": "BRL",
+      "amount": 15,
+      "test_mode": true,
+      "reference_id": "7c235914a",
+      "fields": {
+        "cpf_number": "1234567",
+        "document_id": "12345"
+      },
+      "options": {
+        "attempts_limit": 0,
+        "split_mode": false,
+        "allow_partially": false,
+        "auto_process": false
+      }
+    }
+  }
+}

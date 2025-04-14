@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "567",
+      "description": "Chile",
+      "currency": "CLP",
+      "amount": 99997,
+      "service": "bank_transfer_clp_invoice",
+      "return_url": "https://app.example.com",
+      "callback_url": "https://app.example2.com",
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "fail": "https://example.com/sorry-page.com",
+        "pending": "https://example.com/wait-for-it-page"
+      },
+      "test_mode": true,
+      "customer": {
+        "reference_id": "c592d-4b1dd",
+        "individual_tax_id": "12345678",
+        "name": "John Wick",
+        "email": "johnwick@gmail.com",
+        "phone": "56991234567",
+        "date_of_birth": "1999-09-28",
+        "address": {
+          "country": "CL",
+          "post_code": "8320000",
+          "region": "Santiago",
+          "city": "Santiago",
+          "street": "Av. Libertador",
+          "full_address": "Av. Libertador, 8320000, Santiago, Chile"
+        },
+        "metadata": {
+          "ip": "190.196.12.72"
+        }
+      },
+      "metadata": {
+        "url": "https://example3.com"
+      }
+    }
+  }
+}

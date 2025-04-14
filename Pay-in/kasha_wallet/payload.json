@@ -5,17 +5,17 @@
       "service": "kasha_wallet_clp_hpp",
       "currency": "CLP",
       "amount": 15504,
-      "reference_id": "95cd6f60-8dca-4f14-a388-8e5521608962",
+      "reference_id": "95cd6f60-8dca-4f14-a388-8e5521672962",
       "flow": "charge",
       "metadata": {
-        "url": "www.xxxxxxxxxxx.com"
+        "url": "www.example.com"
       },
       "return_urls": {
         "fail": "https://example.com/sorry-page",
         "pending": "https://example.com/wait-for-it-page",
         "success": "https://example.com/thank-you-page"
       },
-      "callback_url": "https://example.com",
+      "callback_url": "https://example2.com",
       "customer": {
         "reference_id": "589c6551-8804-49b1-81df-5fc4355e56c9",
         "name": "john chile",

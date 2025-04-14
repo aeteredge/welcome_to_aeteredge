@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "5642155122",
+      "description": "Paraguay",
+      "currency": "PYG",
+      "amount": 99997,
+      "service": "bank_transfer_pyg_invoice",
+      "return_url": "https://app.example.com",
+      "callback_url": "https://app.example2.com",
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "fail": "https://example.com/sorry-page.com",
+        "pending": "https://example.com/wait-for-it-page"
+      },
+      "test_mode": true,
+      "customer": {
+        "reference_id": "c592d-4b1dd",
+        "individual_tax_id": "12345678",
+        "name": "John Wick",
+        "email": "johnwick@gmail.com",
+        "phone": "595981234567",
+        "date_of_birth": "1999-09-28",
+        "address": {
+          "country": "PY",
+          "post_code": "1209",
+          "region": "San Lorenzo",
+          "city": "San Lorenzo",
+          "street": "Av. Defensores",
+          "full_address": "Av. Defensores, 1209, San Lorenzo, Paraguay"
+        },
+        "metadata": {
+          "ip": "186.2.45.72"
+        }
+      },
+      "metadata": {
+        "url": "https://example3.com"
+      }
+    }
+  }
+}

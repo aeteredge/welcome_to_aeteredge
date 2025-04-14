@@ -1,0 +1,37 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "f9df600a-c948-4b6b-923a-8a548e0d551b",
+      "service": "upi_inr_hpp",
+      "test_mode": true,
+      "amount": 23534,
+      "currency": "INR",
+      "return_url": "https://example.com",
+      "callback_url": "https://example2.home",
+      "customer": {
+        "reference_id": "99882",
+        "name": "John Wick",
+        "email": "jonhwick@gmail.com",
+        "phone": "9482961247",
+        "address": {
+          "country": "IN",
+          "city": "Vellore",
+          "full_address": "Natrampalli",
+          "post_code": "635854",
+          "region": "India",
+          "street": "Natrampalli"
+        },
+        "metadata": {
+          "ip": "103.207.125.141",
+          "client_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        }
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "fail": "https://example.com/sorry-page",
+        "pending": "https://example.com/wait-for-it-page"
+      }
+    }
+  }
+}

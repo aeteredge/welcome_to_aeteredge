@@ -1,0 +1,22 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "service": "bank_transfer_ars",
+      "currency": "ARS",
+      "amount": 99997,
+      "reference_id": "1203yhju554gf9btyj6815",
+      "test_mode": true,
+      "fields": {
+        "account_number": "1234584",
+        "account_type": "CBU"         
+      },      
+      "options": {       
+        "auto_process": false
+      },         
+      "metadata": {
+        "url": "https://example.com"
+      }
+    }
+  }
+}

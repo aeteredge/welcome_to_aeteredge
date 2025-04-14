@@ -1,0 +1,29 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "service": "bank_transfer_pen",
+      "currency": "PEN",
+      "amount": 99997,
+      "reference_id": "1203yhju5hjnuv54b85",
+      "test_mode": true,
+      "fields": {
+        "bank_code": "123",
+        "account_type": "CC",
+        "account_number": "12345",
+        "document_type": "PAS",
+        "beneficiary_document_id": "AA1234",
+        "beneficiary_name": "John Doe",
+        "beneficiary_city": "London",
+        "bank_account": "12345",
+        "sender_full_name": "John Wich"
+      },
+      "options": {
+        "auto_process": false
+      },
+      "metadata": {
+        "url": "https://example.com"
+      }
+    }
+  }
+}

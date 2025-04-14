@@ -3,27 +3,27 @@
     "type": "payment-invoices",
     "attributes": {
       "service": "blik_pln_hpp",
-      "test_mode": true,
+      "test_mode": false,
       "currency": "PLN",
       "amount": 20,
-      "reference_id": "a30ebec4-052235c-4fc5-8c48-b525ca601f37",
+      "reference_id": "a30ebec4-052235c-4fc5-8c48-b574ca601f37",
       "description": "Invoice Example",
       "flow": "charge",
       "customer": {
         "reference_id": "1234567890",
         "name": "John Wick",
-        "email": "somename@domain.com",
-        "phone": "34000000000",
+        "email": "johnwick@gmail.com",
+        "phone": "48512345678",
         "date_of_birth": "1990-01-01",
         "address": {
-          "full_address": "Street Name 100",
+          "full_address": "ul. Królewska 100",
           "country": "PL",
-          "region": "Poland region",
-          "city": "Poland city",
-          "post_code": "00000"
+          "region": "Warszawa",
+          "city": "Warszawa",
+          "post_code": "00065"
         },
         "metadata": {
-          "ip": "xxx.xxx.x.x"
+          "ip": "185.45.67.89"
         }
       },
       "metadata": {
@@ -35,7 +35,7 @@
         "pending": "https://example.com/wait-for-it-page",
         "success": "https://example.com/thank-you-page"
       },
-      "callback_url": "https://test.doc.home"
+      "callback_url": "https://app.example2.com"
     }
   }
 }

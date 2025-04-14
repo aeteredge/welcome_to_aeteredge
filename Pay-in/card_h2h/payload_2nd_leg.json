@@ -5,7 +5,7 @@
       "card_number": "5123817234060000",
       "card_holder": "John Wick",
       "cvv": "123",
-      "exp_month": "12",
+      "exp_month": "10",
       "exp_year": "30",
       "browser_info": {
         "browser_accept_header": "text/html,application/xhtml+xml,application/xml",

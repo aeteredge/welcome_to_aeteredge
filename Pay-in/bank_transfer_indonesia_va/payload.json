@@ -1,0 +1,42 @@
+{
+  "data": {
+    "type": "payment-invoice",
+    "attributes": {
+      "service": "bca_va_idr_hpp",
+      "currency": "IDR",
+      "amount": 50000,
+      "reference_id": "111ggggg17772456000896ihng2",
+      "flow": "charge",
+      "metadata": {
+        "url": "www.example.com",
+        "userDevice": "DESKTOP"
+      },
+      "return_urls": {
+        "fail": "https://example.com/sorry-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "success": "https://example.com/thank-you-page"
+      },
+      "callback_url": "https://app.example.com",
+      "customer": {
+        "reference_id": "588755665669",
+        "name": "John Wick",
+        "email": "johnwick@gmail.com",
+        "phone": "6281234567890",
+        "individual_tax_id": "36987747K",
+        "address": {
+          "full_address": "Indonesia",
+          "country": "ID",
+          "region": "Indonesia",
+          "city": "Indonesia",
+          "street": "Indonesia",
+          "post_code": "3007601"
+        },
+        "metadata": {
+          "ip": "102.38.199.255",
+          "client_agent": "Chrome/96.0.4664.45"
+        }
+      },
+      "test_mode": true
+    }
+  }
+}

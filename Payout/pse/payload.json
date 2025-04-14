@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {    
+      "service": "scotiabank_cop",
+      "currency": "COP",
+      "amount": 20000,
+      "reference_id": "12345656535781235623561238b70",
+      "test_mode": true,
+      "fields": {
+        "bank_account_name": "John",
+        "bank_account_number": "123456789123456789123456789452",
+        "identity_id": "5715551236",
+        "id_type": "CC",
+        "account_type": "0"
+      },      
+      "options": {        
+        "auto_process": false
+      },
+      "customer": {
+        "reference_id": "1203515",
+        "email": "johnwick@gmail.com",
+        "name": "John Wick",
+        "phone": "34607081239"        
+      },
+      "metadata": {
+        "url": "https://example.com"
+      }
+    }
+  }
+}

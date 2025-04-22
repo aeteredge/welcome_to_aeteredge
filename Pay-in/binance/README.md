@@ -23,7 +23,7 @@ If any of them is missing, the request will be rejected.
 | `return_urls.fail`   | Redirect URL after a failed payment.                                        |
 | `return_urls.pending`| Redirect URL while payment is pending.                                      |
 | `callback_url`       | URL to receive asynchronous status updates.                                 |
-| `test_mode`          | Set to `true` for test/sandbox transactions.                                |
+| `test_mode`          | Set to `false` for live/production transactions.                            |
 
 ---
 
@@ -64,7 +64,7 @@ If any of them is missing, the request will be rejected.
 ## 🔍 Notes
 
 - All amounts must be provided in **USD** as whole numbers (integer).
-- Use `test_mode: true` to simulate transactions in a sandbox environment.
+- Use `test_mode: false`. Testing can only be performed in the production environment.
 - Callback and redirect URLs must be HTTPS for secure communications.
 
 ---

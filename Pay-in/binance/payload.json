@@ -3,7 +3,7 @@
     "type": "payment-invoices",
     "attributes": {
       "service": "binancepay_usd_hpp",
-      "test_mode": true,
+      "test_mode": false,
       "currency": "USD",
       "amount": 10,
       "reference_id": "a30ebec4-035c-4fc5-8c48-b06oiughkja4hu37",

@@ -73,7 +73,7 @@ If any of them is missing, the request will be rejected.
 ## 🔍 Notes
 
 - All amounts must be provided in **Brazilian Reais (BRL)** as whole numbers (integer).
-- CPF is mandatory and must be included in both `service_fields`.
+- CPF is mandatory and must be included in `service_fields`.
 - Use `test_mode: true` to simulate transactions in a sandbox environment.
 - Callback and redirect URLs must be HTTPS for secure communications.
 

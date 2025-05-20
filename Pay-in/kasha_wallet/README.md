@@ -59,8 +59,8 @@ If any of them is missing, the request will be rejected.
 
 | JSON Path                          | Description                                                             |
 |------------------------------------|-------------------------------------------------------------------------|
-| `metadata.url`                     | URL of the company.                                                     |
-| `customer.metadata.ip`             | IP address of the customer.                                             |
+| `metadata.url`                     | Required. URL of the company.                                           |
+| `customer.metadata.ip`             | Required. IP address of the customer.                                   |
 | `customer.metadata.client_agent`   | Required. Browser or user-agent string.                                 |
 | `customer.metadata.user_device`    | Required. Device type used by the user (e.g., `DESKTOP`, `MOBILE`).     |
 
@@ -70,7 +70,6 @@ If any of them is missing, the request will be rejected.
 
 - The service name must follow the format: `kasha_wallet_{currency}_hpp`.
 - All amounts must be provided in the selected currency as whole numbers (integer).
-- Fields `client_agent` and `user_device` under `customer.metadata` are **required** for Kasha Wallet transactions.
 - Use `test_mode: true` for sandbox testing.
 - Callback and redirect URLs must use HTTPS for secure communications.
 

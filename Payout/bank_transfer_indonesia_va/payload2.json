@@ -1,0 +1,30 @@
+{
+    "data": {
+      "type": "payout-invoice",
+      "attributes": {
+        "service": "panin_bank_idr",
+        "currency": "IDR",
+        "amount": 80000,
+        "reference_id": "1203yhj551rb44p5",
+        "test_mode": true,
+        "fields": {
+          "beneficiary_first_name": "John",
+          "beneficiary_last_name": "Smith",
+          "account_number": "12345678912345678912456789452"       
+        },
+        "options": {
+          "auto_process": true
+        },
+        "customer": {
+          "reference_id": "1203515",
+          "email": "johnwick@gmail.com",
+          "name": "John Wick",
+          "phone": "34607081239"
+        },
+        "metadata": {
+          "url": "https://example.com"
+        }
+      }
+    }
+  }
+  

@@ -33,4 +33,13 @@ If any of them is missing or placed outside of `fields`, the request will be rej
 - Set `auto_process` to `true` or `false` to control whether the transaction is processed automatically. If set to `false`, you will need to approve it manually from the dashboard.
 - Additional metadata (e.g., `url`) must be included in the `metadata` object.
 
+## 🎯 Approving transactions in sandbox
+
+When using `test_mode: true`, you can simulate different payment outcomes by setting specific values in the `amount` field:
+
+| Test Amount    | Behavior                                    |
+|----------------|---------------------------------------------|
+| `99997`        | Triggers a **successful** payment callback. |
+| `99999`        | Triggers a **declined** payment callback.   |
+
 ---

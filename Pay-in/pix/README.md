@@ -77,4 +77,13 @@ If any of them is missing, the request will be rejected.
 - Use `test_mode: true` to simulate transactions in a sandbox environment.
 - Callback and redirect URLs must be HTTPS for secure communications.
 
+## 🎯 Approving transactions in sandbox
+
+When using `test_mode: true`, you can simulate different payment outcomes by setting specific values in the `amount` field:
+
+| Test Amount    | Behavior                                    |
+|----------------|---------------------------------------------|
+| `99997`        | Triggers a **successful** payment callback. |
+| `99999`        | Triggers a **declined** payment callback.   |
+
 ---

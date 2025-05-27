@@ -6,7 +6,21 @@
       "card_holder": "John Wick",
       "cvv": "123",
       "exp_month": "10",
-      "exp_year": "30"      
+      "exp_year": "30",
+      "browser_info": {
+        "browser_accept_header": "text/html,application/xhtml+xml,application/xml",
+        "browser_color_depth": "24",
+        "browser_ip": "49.178.169.48",
+        "browser_java_enabled": false,
+        "browser_language": "en-AU",
+        "browser_screen_height": "***",
+        "browser_screen_width": "1111",
+        "browser_tz": "-570",
+        "browser_user_agent": "Mozilla/5.0 (Linux; Android 9; SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/133.0.6943.137 Mobile Safari/537.36",
+        "device_channel": "02",
+        "window_height": "***",
+        "window_width": "***"
+      }
     }
   }
 }

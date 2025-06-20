@@ -68,4 +68,13 @@ If any of them is missing, the request will be rejected.
 - Callback and redirect URLs must be HTTPS for secure communications.
 - This service uses a hosted payment page (HPP) via BLIK.
 
+## 🎯 Approving transactions in sandbox
+
+When using `test_mode: true`, you can simulate different payment outcomes by setting specific values in the `amount` field:
+
+| Test Amount         | Behavior                                    |
+|---------------------|---------------------------------------------|
+| `777000 to 777999`  | Triggers a **successful** payment callback. |
+| `000000 to 77699`   | Triggers a **fail/retry** payment callback. |
+| `778000 to 999999`  | Triggers a **fail/retry** payment callback. |
 ---

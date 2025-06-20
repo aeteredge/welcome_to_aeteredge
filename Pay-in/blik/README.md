@@ -53,11 +53,11 @@ If any of them is missing, the request will be rejected.
 
 ### 🧩 Metadata
 
-| JSON Path                     | Description                                                   |
-|-------------------------------|---------------------------------------------------------------|
-| `metadata.url`                | URL of the company.                                           |
-| `metadata.FTD`                | First Time Deposit indicator (e.g., `"true"`).                |
-| `customer.metadata.ip`        | IP address of the customer.                                   |
+| JSON Path                     | Description                                                                                                    |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------|
+| `metadata.url`                | URL of the company.                                                                                            |
+| `metadata.FTD`                | **First Time Deposit indicator.** It's very important to include this parameter. Set to `"true"` if this is the **customer's first deposit**, or `"false"` if the **traffic is trusted**.                                                                        |
+| `customer.metadata.ip`        | IP address of the customer.                                                                                    |
 
 ---
 

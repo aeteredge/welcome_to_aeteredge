@@ -1,6 +1,6 @@
 # 📄 Payload for `payout-invoice` (BinancePay - USD)
 
-This document outlines the structure and required fields for the `payout-invoice` payload using the `binancepay_usd` service, which supports **USD payouts using BinancePay**.
+This document outlines the structure and required fields for the `payout-invoices` payload using the `binancepay_usd` service, which supports **USD payouts using BinancePay**.
 
 ---
 

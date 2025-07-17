@@ -55,7 +55,7 @@ Inside your dashboard, under **Settings > Integration**, you’ll find the crede
 📌 The URL for Pay-In is [https://api.aeteredge.com/payment-invoices](https://api.aeteredge.com/payment-invoices)  
 📌 The URL for Payout is [https://api.aeteredge.com/payout-invoices](https://api.aeteredge.com/payout-invoices)  
 🔑 Authentication type: **BasicAuth**  
-📊 You can view this information in the dashboard under **Settings > Integration**
+📊 You can view this information in the dashboard under **Account > General > Integration**
 
 ![Private API Screenshot](.assets/PrivateApi.jpg)
 

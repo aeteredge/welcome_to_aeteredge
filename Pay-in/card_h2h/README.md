@@ -64,6 +64,8 @@ If any of them is missing, the request will be rejected.
 
 This is the payload sent after the user submits their card details on the hosted payment page.
 
+⚠️ **All fields listed below are mandatory**. Omission of any of them will result in a failed or rejected transaction.
+
 ### 🔐 Card Details (nested under `attributes`)
 
 | JSON Key             | Description                                                              |
@@ -84,6 +86,14 @@ This is the payload sent after the user submits their card details on the hosted
 | `browser_java_enabled`    | Whether Java is enabled.                                            |
 | `browser_language`        | Browser language (e.g., `"en-US"`).                                 |
 | `browser_user_agent`      | Full browser user-agent string.                                     |
+| `browser_color_depth`     | Color depth of the browser window.                                  |
+| `browser_ip`              | IP address of the customer device.                                  |
+| `browser_screen_height`   | Screen height in pixels.                                            |
+| `browser_screen_width`    | Screen width in pixels.                                             |
+| `browser_tz`              | Timezone offset (e.g., `"-570"`).                                   |
+| `device_channel`          | Indicates channel: `"02"` for browser-based.                        |
+| `window_height`           | Window height in pixels.                                            |
+| `window_width`            | Window width in pixels.                                             |
 
 ---
 

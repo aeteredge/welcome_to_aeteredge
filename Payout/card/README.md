@@ -1,6 +1,14 @@
 # 📄 Payload for `payout-invoice` (CARD)
 
-This document outlines the structure and required fields for the `payout-invoice` payload using the `payment_card_usd` service, which supports **payouts to payment cards in USD**.
+This document outlines the structure and required fields for the `payout-invoice` payload when using card-based payout services. TIt applies to any supported card payout service regardless of currency.
+
+## 💡 Example Services
+
+This payload structure may be used with services like:
+
+- `payment_card_usd`  
+- `payment_card_eur`  
+*(depending on the selected currency)*
 
 ---
 
@@ -45,7 +53,8 @@ If any of them is missing or misplaced, the request will be rejected.
 
 ## 🔍 Notes
 
-- `amount` must be provided in **US Dollars (USD)** as an integer (no decimal places).
+- `currency`: Indicates the transaction currency (e.g., `"USD"`, `"EUR"`).
+- `amount`: Must be provided as an **integer** in the selected currency (no decimal points).
 - `reference_id` is a unique identifier for the transaction (used for tracking).
 - `description` is optional and provides context or labeling for the payout.
 - `test_mode: true` indicates this is a simulated transaction.
@@ -53,3 +62,4 @@ If any of them is missing or misplaced, the request will be rejected.
 - Additional metadata (e.g., `url`) must be included inside the `customer.metadata` object.
 
 ---
+

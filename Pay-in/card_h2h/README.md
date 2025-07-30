@@ -66,7 +66,7 @@ This is the payload sent after the user submits their card details on the hosted
 
 ⚠️ **All fields listed below are mandatory**. Omission of any of them will result in a failed or rejected transaction.
 
-### 🔐 Card Details (nested under `attributes`)
+### 🔐 Card Details (nested under `attributes`) - **Mandatory**
 
 | JSON Key             | Description                                                              |
 |----------------------|--------------------------------------------------------------------------|
@@ -76,9 +76,8 @@ This is the payload sent after the user submits their card details on the hosted
 | `exp_month`          | Expiration month (e.g., `"10"`).                                         |
 | `exp_year`           | Expiration year (e.g., `"30"` for 2030).                                 |
 
----
 
-### 🌐 Browser Info (nested under `browser_info`)
+### 🌐 Browser Info (nested under `browser_info`) - **Mandatory**
 
 | JSON Key                  | Description                                                         |
 |---------------------------|---------------------------------------------------------------------|

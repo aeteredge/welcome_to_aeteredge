@@ -2,25 +2,25 @@
   "data": {
     "type": "payout-invoice",
     "attributes": {
+      "reference_id": "a44446455516141gh",
       "service": "bank_transfer_pyg",
       "currency": "PYG",
       "amount": 99997,
-      "reference_id": "a44446455516141gh",
       "test_mode": true,
       "fields": {
-        "account_type": "ACCOUNT_PARAGUAY",
-        "beneficiary_document_id": "42089587",
         "bank_code": "123",
-        "beneficiary_name": "John Doe",
-        "beneficiary_document_type": "DNI",
+        "account_type": "ACCOUNT_PARAGUAY",
         "bank_account": "12345",
+        "beneficiary_document_type": "DNI",
+        "beneficiary_document_id": "42089587",
+        "beneficiary_name": "John Doe",
         "sender_full_name": "John Wick "
       },
-      "options": {        
-        "auto_process": false
-      },     
       "metadata": {
         "url": "https://example.com"
+      },
+      "options": {
+        "auto_process": false
       }
     }
   }

@@ -2,6 +2,7 @@
 
 This document outlines the structure and required fields for the `payment-invoices` payload using the `kasha_wallet_{currency}_hpp` service, which supports **hosted pay-ins using Kasha Wallet**.  
 The service name is dynamic based on the currency. For example:
+
 - For Chilean Pesos (CLP): `kasha_wallet_clp_hpp`
 - For Euros (EUR): `kasha_wallet_eur_hpp`
 
@@ -14,55 +15,54 @@ If any of them is missing, the request will be rejected.
 
 ### 🧾 Root Attributes (nested under `attributes`)
 
-| JSON Key             | Description                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| `reference_id`       | Unique identifier for the payment request.                                  |
-| `currency`           | Currency of the transaction. Affects the service name.                      |
-| `amount`             | Amount to be paid, as an integer (no decimal places).                       |
-| `service`            | Dynamic based on currency: `kasha_wallet_{currency}_hpp`.                   |
-| `flow`               | Payment flow. Use `"charge"` for hosted page flow.                          |
-| `return_urls.success`| Redirect URL after a successful payment.                                    |
-| `return_urls.fail`   | Redirect URL after a failed payment.                                        |
-| `return_urls.pending`| Redirect URL while payment is pending.                                      |
-| `callback_url`       | URL to receive asynchronous status updates.                                 |
-| `test_mode`          | Set to `true` for sandbox, or `false` for live mode.                        |
+| JSON Key              | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| `reference_id`        | Unique identifier for the payment request.                |
+| `service`             | Dynamic based on currency: `kasha_wallet_{currency}_hpp`. |
+| `currency`            | Currency of the transaction. Affects the service name.    |
+| `amount`              | Amount to be paid, as an integer (no decimal places).     |
+| `test_mode`           | Set to `true` for sandbox, or `false` for live mode.      |
+| `flow`                | Payment flow. Use `"charge"` for hosted page flow.        |
+| `return_urls.success` | Redirect URL after a successful payment.                  |
+| `return_urls.pending` | Redirect URL while payment is pending.                    |
+| `return_urls.fail`    | Redirect URL after a failed payment.                      |
+| `callback_url`        | URL to receive asynchronous status updates.               |
 
 ---
 
 ### 👤 Customer (nested under `customer`)
 
-| JSON Key             | Description                                                             |
-|----------------------|-------------------------------------------------------------------------|
-| `reference_id`       | Unique identifier of the customer.                                      |
-| `name`               | Full name of the customer.                                              |
-| `email`              | Email address of the customer.                                          |
-| `phone`              | Phone number of the customer.                                           |
-| `date_of_birth`      | Date of birth in the format `YYYY-MM-DD`.                               |
-| `individual_tax_id`  | Optional tax identification number of the customer.                     |
+| JSON Key            | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| `reference_id`      | Unique identifier of the customer.                  |
+| `individual_tax_id` | Optional tax identification number of the customer. |
+| `name`              | Full name of the customer.                          |
+| `email`             | Email address of the customer.                      |
+| `phone`             | Phone number of the customer.                       |
 
 ---
 
 ### 🏠 Address (nested under `customer.address`)
 
-| JSON Key        | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| `full_address`   | Full formatted address string.                                              |
-| `country`        | Country code (e.g., `"CL"` for Chile).                                      |
-| `region`         | Province or region.                                                         |
-| `city`           | City name.                                                                  |
-| `street`         | Street name and number.                                                     |
-| `post_code`      | Postal code.                                                                |
+| JSON Key       | Description                            |
+| -------------- | -------------------------------------- |
+| `full_address` | Full formatted address string.         |
+| `country`      | Country code (e.g., `"CL"` for Chile). |
+| `region`       | Province or region.                    |
+| `city`         | City name.                             |
+| `street`       | Street name and number.                |
+| `post_code`    | Postal code.                           |
 
 ---
 
 ### 🧩 Metadata
 
-| JSON Path                          | Description                                                             |
-|------------------------------------|-------------------------------------------------------------------------|
-| `metadata.url`                     | Required. URL of the company.                                           |
-| `customer.metadata.ip`             | Required. IP address of the customer.                                   |
-| `customer.metadata.client_agent`   | Required. Browser or user-agent string.                                 |
-| `customer.metadata.user_device`    | Required. Device type used by the user (e.g., `DESKTOP`, `MOBILE`).     |
+| JSON Path                        | Description                                                         |
+| -------------------------------- | ------------------------------------------------------------------- |
+| `customer.metadata.client_agent` | Required. Browser or user-agent string.                             |
+| `customer.metadata.user_device`  | Required. Device type used by the user (e.g., `DESKTOP`, `MOBILE`). |
+| `metadata.url`                   | Required. URL of the company.                                       |
+| `customer.metadata.ip`           | Required. IP address of the customer.                               |
 
 ---
 

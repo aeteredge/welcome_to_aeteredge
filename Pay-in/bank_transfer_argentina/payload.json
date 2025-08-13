@@ -3,17 +3,10 @@
     "type": "payment-invoices",
     "attributes": {
       "reference_id": "111663356156",
-      "description": "Argentina",
+      "service": "bank_transfer_ars_invoice",
       "currency": "ARS",
       "amount": 99997,
-      "service": "bank_transfer_ars_invoice",
-      "return_url": "https://app.example.com",
-      "callback_url": "https://app.example2.com",
-      "return_urls": {
-        "success": "https://example.com/thank-you-page",
-        "fail": "https://example.com/sorry-page.com",
-        "pending": "https://example.com/wait-for-it-page"
-      },
+      "description": "Argentina",
       "test_mode": true,
       "customer": {
         "reference_id": "c592d-4b1dd",
@@ -23,20 +16,26 @@
         "phone": "5491123456789",
         "date_of_birth": "1999-09-28",
         "address": {
+          "full_address": "Av. Santa Fe 1234, Buenos Aires, C1425, Argentina",
           "country": "AR",
-          "post_code": "C1425",
           "region": "Buenos Aires",
           "city": "Buenos Aires",
           "street": "Av. Santa Fe 1234",
-          "full_address": "Av. Santa Fe 1234,Buenos Aires, Argentina"
+          "post_code": "C1425"
         },
         "metadata": {
           "ip": "190.16.34.87"
         }
       },
       "metadata": {
-        "url": "https://example3.com"
-      }
+        "url": "https://example.com"
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example2.com"
     }
   }
 }

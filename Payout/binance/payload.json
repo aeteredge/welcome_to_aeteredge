@@ -1,17 +1,15 @@
 {
-    "data": {
-      "type": "payout-invoice",
-      "attributes": {
-        "service": "binancepay_usd",
-        "currency": "USD",
-        "amount": 1,
-        "reference_id": "87e82753-e745-4f83-a95f-3a1512f619bc",
-        "fields": {
-          "recipient_type": "BINANCE_ID",
-          "recipient_id": "12345678"
-        }
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "reference_id": "87e82753-e745-4f83-a95f-3a1512f619bc",
+      "service": "binancepay_usd",
+      "currency": "USD",
+      "amount": 1,
+      "fields": {
+        "recipient_type": "BINANCE_ID",
+        "recipient_id": "12345678"
       }
     }
   }
-  
- 
+}

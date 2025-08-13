@@ -10,19 +10,19 @@
       "fields": {
         "bank_code": "123",
         "account_type": "CC",
+        "bank_account": "12345",
         "account_number": "12345",
         "document_type": "PAS",
         "beneficiary_document_id": "AA1234",
         "beneficiary_name": "John Doe",
-        "beneficiary_city": "London",
-        "bank_account": "12345",
-        "sender_full_name": "John Wich"
-      },
-      "options": {
-        "auto_process": false
+        "sender_full_name": "John Wich",
+        "beneficiary_city": "London"
       },
       "metadata": {
         "url": "https://example.com"
+      },
+      "options": {
+        "auto_process": false
       }
     }
   }

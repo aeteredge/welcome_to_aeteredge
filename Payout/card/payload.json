@@ -2,14 +2,12 @@
   "data": {
     "type": "payout-invoice",
     "attributes": {
+      "reference_id": "4861ee0a-9b3b-408d-9e99-236938920fec",
       "service": "payment_card_usd",
       "currency": "USD",
-      "amount": 100,
-      "reference_id": "4861ee0a-9b3b-408d-9e99-236938920fec",
+      "amount": 100,      
       "description": "payout",
-      "options": {
-        "auto_process": false
-      },
+      "test_mode": true,      
       "fields": {
         "card_number": "5123817234060000"
       },
@@ -23,17 +21,20 @@
         "reference_id": "d1c31276-0242-4a9e-92b6-dda216fdf8cc",
         "name": "John Wick",
         "address": {
+          "full_address": "Carrer Entenca 100, Barcelona, 08019, Spain",
           "country": "ES",
+          "region": "Barcelona",
           "city": "Barcelona",
-          "region": "Bracelona",
-          "post_code": "08015",
-          "full_address": " Barcelona, 08015, ES"
+          "street": "Carrer Entenca 100",
+          "post_code": "08019"          
         },
         "metadata": {
           "url": "https://example.com"
         }
       },
-      "test_mode": true
+      "options": {
+        "auto_process": false
+      }
     }
   }
 }

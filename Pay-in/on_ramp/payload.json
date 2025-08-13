@@ -1,0 +1,26 @@
+{
+  "data": {
+    "type": "payment-invoice",
+    "attributes": {
+      "reference_id": "14NN5656ukpplk5dd0df28b",
+      "service": "pay_id_crypto_aud_hpp",
+      "currency": "AUD",
+      "amount": 50,
+      "test_mode": false,
+      "flow": "charge",     
+      "service_fields": {
+        "blockchain_address": "1254g1455frtry5ht5th5"
+      },
+      "options": {
+        "allow_partially": false,
+        "bypass_hpp": true,
+        "send_operation_context_on_return": false
+      },
+      "gateway_options": {
+        "cardgate": {
+          "tokenize": false
+        }
+      }
+    }
+  }
+}

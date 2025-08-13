@@ -1,0 +1,23 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "4512y625r6",
+      "service": "epaybg_eur_hpp",
+      "currency": "EUR",
+      "amount": 1,
+      "description": "Invoice Example",
+      "test_mode": false,
+      "flow": "charge",
+      "customer": {
+        "reference_id": "d4a587fa-f70e-41aa",
+        "email": "jonhwick@gmail.com"
+      },
+      "metadata": {
+        "site_url": "https://example.com"
+      },
+      "return_url": "https://example2.com",
+      "callback_url": "https://example3.com"
+    }
+  }
+}

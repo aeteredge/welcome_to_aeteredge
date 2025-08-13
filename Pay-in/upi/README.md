@@ -11,52 +11,51 @@ If any of them is missing, the request will be rejected.
 
 ### 🧾 Root Attributes (nested under `attributes`)
 
-| JSON Key             | Description                                                                 |
-|----------------------|-----------------------------------------------------------------------------|
-| `reference_id`       | Unique identifier for the payment request.                                  |
-| `currency`           | Must be `"INR"` for Indian Rupees.                                          |
-| `amount`             | Amount to be paid.                                                          |
-| `service`            | Must be `"upi_inr_hpp"` for UPI hosted payments.                            |
-| `return_url`         | Legacy return URL after completion.                                         |
-| `callback_url`       | URL to receive asynchronous status updates.                                 |
-| `return_urls.success`| Redirect URL after a successful payment.                                    |
-| `return_urls.fail`   | Redirect URL after a failed payment.                                        |
-| `return_urls.pending`| Redirect URL while payment is pending.                                      |
-| `test_mode`          | Set to `true` for sandbox testing, or `false` for live transactions.        |
+| JSON Key              | Description                                                          |
+| --------------------- | -------------------------------------------------------------------- |
+| `reference_id`        | Unique identifier for the payment request.                           |
+| `service`             | Must be `"upi_inr_hpp"` for UPI hosted payments.                     |
+| `currency`            | Must be `"INR"` for Indian Rupees.                                   |
+| `amount`              | Amount to be paid.                                                   |
+| `test_mode`           | Set to `true` for sandbox testing, or `false` for live transactions. |
+| `return_urls.success` | Redirect URL after a successful payment.                             |
+| `return_urls.pending` | Redirect URL while payment is pending.                               |
+| `return_urls.fail`    | Redirect URL after a failed payment.                                 |
+| `callback_url`        | URL to receive asynchronous status updates.                          |
 
 ---
 
 ### 👤 Customer (nested under `customer`)
 
-| JSON Key             | Description                                                             |
-|----------------------|-------------------------------------------------------------------------|
-| `reference_id`       | Unique identifier of the customer.                                      |
-| `name`               | Full name of the customer.                                              |
-| `email`              | Email address of the customer.                                          |
-| `phone`              | Phone number of the customer.                                           |
+| JSON Key       | Description                        |
+| -------------- | ---------------------------------- |
+| `reference_id` | Unique identifier of the customer. |
+| `name`         | Full name of the customer.         |
+| `email`        | Email address of the customer.     |
+| `phone`        | Phone number of the customer.      |
 
 ---
 
 ### 🏠 Address (nested under `customer.address`)
 
-| JSON Key         | Description                                                                 |
-|------------------|-----------------------------------------------------------------------------|
-| `country`        | Country code (must be `"IN"` for India).                                    |
-| `city`           | City name.                                                                  |
-| `full_address`   | Full formatted address string.                                              |
-| `post_code`      | Postal code.                                                                |
-| `region`         | Province or region.                                                         |
-| `street`         | Street name and number.                                                     |
+| JSON Key       | Description                              |
+| -------------- | ---------------------------------------- |
+| `country`      | Country code (must be `"IN"` for India). |
+| `city`         | City name.                               |
+| `full_address` | Full formatted address string.           |
+| `post_code`    | Postal code.                             |
+| `region`       | Province or region.                      |
+| `street`       | Street name and number.                  |
 
 ---
 
 ### 🧩 Metadata
 
-| JSON Path                          | Description                                                             |
-|------------------------------------|-------------------------------------------------------------------------|
-| `customer.metadata.ip`             | IP address of the customer.                                             |
-| `customer.metadata.client_agent`   | Browser or user-agent string.                                           |
-| `metadata.url`                     | URL of the company.                                                     |
+| JSON Path                        | Description                   |
+| -------------------------------- | ----------------------------- |
+| `customer.metadata.ip`           | IP address of the customer.   |
+| `customer.metadata.client_agent` | Browser or user-agent string. |
+| `metadata.url`                   | URL of the company.           |
 
 ---
 

@@ -3,21 +3,14 @@
     "type": "payment-invoices",
     "attributes": {
       "reference_id": "546",
-      "description": "deposit",
+      "service": "pix_brl_invoice",
       "currency": "BRL",
       "amount": 99997,
-      "service": "pix_brl_invoice",
-      "return_url": "https://app.example.com",
-      "callback_url": "https://app.example2.com",
-      "return_urls": {
-        "fail": "https://example.com/sorry-page",
-        "pending": "https://example.com/wait-for-it-page",
-        "success": "https://example.com/thank-you-page"
-      },
+      "description": "deposit",
+      "test_mode": true,
       "service_fields": {
         "cpf_number": "12345678909"
       },
-      "test_mode": true,
       "customer": {
         "reference_id": "c592d-4b16edddd",
         "individual_tax_id": "12345678909",
@@ -26,20 +19,26 @@
         "phone": "5511916645678",
         "date_of_birth": "1999-09-28",
         "address": {
+          "full_address": "Praça da Sé 1, São Paulo - SP, 01001-000, Brasil",
           "country": "BR",
-          "post_code": "01001000",
-          "region": "Sao Paulo",
-          "city": "Sao Paulo",
-          "street": "Sao Paulo",
-          "full_address": "Sao Paulo"
-        },        
+          "region": "São Paulo",
+          "city": "São Paulo",
+          "street": "Praça da Sé 1",
+          "post_code": "01001-000"
+        },
         "metadata": {
           "ip": "177.10.45.72"
         }
       },
       "metadata": {
-        "url": "https://example3.com"
-      }
+        "url": "https://example.com"
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example2.com"
     }
   }
 }

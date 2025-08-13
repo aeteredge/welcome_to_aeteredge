@@ -2,12 +2,12 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
+      "reference_id": "a30ebec4-052235c-4fc5-8c48-b574ca601f37",
       "service": "blik_pln_hpp",
-      "test_mode": false,
       "currency": "PLN",
       "amount": 20,
-      "reference_id": "a30ebec4-052235c-4fc5-8c48-b574ca601f37",
       "description": "Invoice Example",
+      "test_mode": true,
       "flow": "charge",
       "customer": {
         "reference_id": "1234567890",
@@ -16,9 +16,9 @@
         "phone": "48512345678",
         "date_of_birth": "1990-01-01",
         "address": {
-          "full_address": "ul. Królewska 100",
+          "full_address": "ul. Królewska 100, 00065 Warszawa, Poland", 
           "country": "PL",
-          "region": "Warszawa",
+          "region": "Mazowieckie",
           "city": "Warszawa",
           "post_code": "00065"
         },
@@ -27,15 +27,15 @@
         }
       },
       "metadata": {
-        "url": "https://www.example.com",
+        "url": "https://example.com",
         "FTD": "true"
       },
       "return_urls": {
-        "fail": "https://example.com/sorry-page",
+        "success": "https://example.com/thank-you-page",
         "pending": "https://example.com/wait-for-it-page",
-        "success": "https://example.com/thank-you-page"
+        "fail": "https://example.com/sorry-page.com"
       },
-      "callback_url": "https://app.example2.com"
+      "callback_url": "https://example2.com"
     }
   }
 }

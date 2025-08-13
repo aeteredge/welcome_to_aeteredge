@@ -3,17 +3,10 @@
     "type": "payment-invoices",
     "attributes": {
       "reference_id": "11166316156",
-      "description": "PERU",
+      "service": "bank_transfer_pen_invoice",
       "currency": "PEN",
       "amount": 99997,
-      "service": "bank_transfer_pen_invoice",
-      "return_url": "https://app.example.com",
-      "callback_url": "https://app.example2.com",
-      "return_urls": {
-        "success": "https://example.com/thank-you-page",
-        "fail": "https://example.com/sorry-page.com",
-        "pending": "https://example.com/wait-for-it-page"
-      },
+      "description": "PERU",
       "test_mode": true,
       "customer": {
         "reference_id": "c592d-4b1dd",
@@ -23,20 +16,26 @@
         "phone": "55987654321",
         "date_of_birth": "1999-09-28",
         "address": {
+          "full_address": "Av. Arequipa100, Lima, 15001, Peru",
           "country": "PE",
-          "post_code": "15001",
           "region": "Lima",
           "city": "Lima",
-          "street": "Av. Arequipa",
-          "full_address": "Av. Arequipa, Lima, Peru"
-        },        
+          "street": "Av. Arequipa 100",
+          "post_code": "15001"
+        },
         "metadata": {
           "ip": "181.65.27.72"
         }
       },
       "metadata": {
-        "url": "https://example3.com"
-      }
+        "url": "https://example.com"
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example2.com"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "14255h47e5r9",
+      "service": "polipayonline_nzd_hpp",
+      "currency": "NZD",
+      "amount": 100,
+      "description": "Invoice Example",
+      "test_mode": false,
+      "flow": "charge",
+      "customer": {
+        "reference_id": "d4a587fa-f70e-41aa",
+        "name": "John Wick",
+        "email": "jonhwick@gmail.com",
+        "phone": "919876543210",
+        "address": {
+          "country": "NZ",
+          "city": "Otumoetai",
+          "street": "53 Bodiam Place",
+          "post_code": "3110"
+        }
+      },
+      "metadata": {
+        "site_url": "https://example.com"
+      },
+      "return_url": "https://example2.com",
+      "callback_url": "https://example3.com"
+    }
+  }
+}

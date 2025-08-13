@@ -2,26 +2,18 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
+      "reference_id": "95cd6f60-8dca-4f14-a388-8e5521672962",
       "service": "kasha_wallet_clp_hpp",
       "currency": "CLP",
       "amount": 15504,
-      "reference_id": "95cd6f60-8dca-4f14-a388-8e5521672962",
+      "test_mode": true,
       "flow": "charge",
-      "metadata": {
-        "url": "www.example.com"
-      },
-      "return_urls": {
-        "fail": "https://example.com/sorry-page",
-        "pending": "https://example.com/wait-for-it-page",
-        "success": "https://example.com/thank-you-page"
-      },
-      "callback_url": "https://example2.com",
       "customer": {
         "reference_id": "589c6551-8804-49b1-81df-5fc4355e56c9",
+        "individual_tax_id": "36987747K",
         "name": "john chile",
         "email": "johchile@gmail.com",
         "phone": "56233145118",
-        "individual_tax_id": "36987747K",
         "address": {
           "full_address": "Chile",
           "country": "CL",
@@ -36,7 +28,15 @@
           "user_device": "DESKTOP"
         }
       },
-      "test_mode": true
+      "metadata": {
+        "url": "https://example.com"
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example2.com"
     }
   }
 }

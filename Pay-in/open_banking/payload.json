@@ -3,40 +3,39 @@
     "type": "payment-invoices",
     "attributes": {
       "reference_id": "54acd6100879b6c49f06a270a73af1cb",
-      "description": "Digital Purchase",
+      "service": "openbanking_eur_hpp",
       "currency": "EUR",
       "amount": 15,
-      "service": "openbanking_eur_hpp",
-      "return_url": "https://example.com",
-      "callback_url": "https://example2.com",
-      "return_urls": {
-        "success": "https://example.com/thank-you-page",
-        "fail": "https://example.com/sorry-page",
-        "pending": "https://example.com/wait-for-it-page"
-      },
+      "description": "Digital Purchase",
       "test_mode": false,
       "customer": {
         "reference_id": "6263",
         "description": "Digital Purchase",
-        "email": "johnwick@gmail.com",
         "name": "John Wick",
+        "email": "johnwick@gmail.com",
         "phone": "31657503000",
         "date_of_birth": "1984-05-22",
         "address": {
+          "full_address": "Stavorenstraat 31, 8244 DN Lelystad, Flevoland, Netherlands",
           "country": "NL",
-          "post_code": "8244DN",
           "region": "Flevoland",
           "city": "Lelystad",
-          "street": "Stavorenstr31",
-          "full_address": "Stavorenstr31"
-        },        
+          "street": "Stavorenstraat 31",
+          "post_code": "8244 DN"
+        },
         "metadata": {
           "ip": "240.164.189.96"
         }
       },
       "metadata": {
-        "url": "www.example3.com"
-      }
+        "url": "https://example.com"
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example2.com"
     }
   }
 }

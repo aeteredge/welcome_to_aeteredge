@@ -2,10 +2,10 @@
   "data": {
     "type": "payout-invoice",
     "attributes": {
+      "reference_id": "81235623561238b70",
       "service": "nequi_cop",
       "currency": "COP",
       "amount": 20000,
-      "reference_id": "81235623561238b70",
       "test_mode": true,
       "fields": {
         "bank_account_name": "John",
@@ -13,18 +13,18 @@
         "identity_id": "5715551236",
         "id_type": "CC",
         "account_type": "0"
-      },      
-      "options": {        
-        "auto_process": false
       },
       "customer": {
         "reference_id": "1203515",
-        "email": "johnwick@gmail.com",
         "name": "John Wick",
+        "email": "johnwick@gmail.com",
         "phone": "34607081239"
       },
       "metadata": {
         "url": "https://example.com"
+      },
+      "options": {
+        "auto_process": false
       }
     }
   }

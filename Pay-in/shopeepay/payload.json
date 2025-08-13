@@ -2,41 +2,41 @@
   "data": {
     "type": "payment-invoice",
     "attributes": {
+      "reference_id": "111175257724gjy5D445ibugvD60008962",
       "service": "shopeepay_idr_hpp",
       "currency": "IDR",
       "amount": 50000,
-      "reference_id": "111175257724gjy5D445ibugvD60008962",
+      "test_mode": true,
       "flow": "charge",
-      "metadata": {
-        "url": "www.example.com",
-        "userDevice": "DESKTOP"
-      },
-      "return_urls": {
-        "fail": "https://example.com/sorry-page",
-        "pending": "https://example.com/wait-for-it-page",
-        "success": "https://example.com/thank-you-page"
-      },
-      "callback_url": "https://app.example.com",
       "customer": {
         "reference_id": "588755665669",
+        "individual_tax_id": "36987747K",
         "name": "John Wick",
         "email": "johnwick@gmail.com",
         "phone": "6281234567890",
-        "individual_tax_id": "36987747K",
         "address": {
-          "full_address": "Indonesia",
+          "full_address": "Jl. Sudirman 25, Jakarta Pusat, 10210, Indonesia",
           "country": "ID",
-          "region": "Indonesia",
-          "city": "Indonesia",
-          "street": "Indonesia",
-          "post_code": "3007601"
+          "region": "DKI Jakarta",
+          "city": "Jakarta Pusat",
+          "street": "Jl. Sudirman 25",
+          "post_code": "10210"
         },
         "metadata": {
           "ip": "102.38.199.255",
           "client_agent": "Chrome/96.0.4664.45"
         }
       },
-      "test_mode": true
+      "metadata": {
+        "url": "https://example.com",
+        "userDevice": "DESKTOP"
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example2.com"
     }
   }
 }

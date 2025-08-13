@@ -2,39 +2,39 @@
   "data": {
     "type": "payment-invoice",
     "attributes": {
+      "reference_id": "556324656454457cf8-8e55215608962",
       "service": "efecty_cop_hpp",
       "currency": "COP",
       "amount": 50000,
-      "reference_id": "556324656454457cf8-8e55215608962",
+      "test_mode": true,
       "flow": "charge",
-      "metadata": {
-        "url": "www.example.com"
-      },
-      "return_urls": {
-        "fail": "https://example.com/sorry-page",
-        "pending": "https://example.com/wait-for-it-page",
-        "success": "https://example.com/thank-you-page"
-      },
-      "callback_url": "https://example2.com",
       "customer": {
         "reference_id": "58875",
+        "individual_tax_id": "36987747K",
         "name": "John Wick",
         "email": "johnwick@gmail.com",
         "phone": "573123456789",
-        "individual_tax_id": "36987747K",
         "address": {
-          "full_address": "Bogota, Colombia",
+          "full_address": "Carrera 7 #12-60, La Candelaria, Bogotá, 110011, Colombia",
           "country": "CO",
-          "region": "Bogota",
-          "city": "Bogota",
-          "street": "Bogota",
+          "region": "Bogotá",
+          "city": "Bogotá",
+          "street": "Carrera 7 #12-60",
           "post_code": "110011"
         },
         "metadata": {
           "ip": "190.28.45.123"
         }
       },
-      "test_mode": true
+      "metadata": {
+        "url": "https://example.com"
+      },
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example2.com"
     }
   }
 }

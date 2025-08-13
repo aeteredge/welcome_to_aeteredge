@@ -2,12 +2,12 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
+      "reference_id": "a30ebec4-035c-4fc5-8c48-b06oiughkja4hu37",
       "service": "binancepay_usd_hpp",
-      "test_mode": false,
       "currency": "USD",
       "amount": 10,
-      "reference_id": "a30ebec4-035c-4fc5-8c48-b06oiughkja4hu37",
       "description": "Invoice Example",
+      "test_mode": false,
       "flow": "charge",
       "customer": {
         "reference_id": "589c6551-8804-49b1-46df-5jco0067578c9",
@@ -16,11 +16,11 @@
         "phone": "34609347829",
         "date_of_birth": "1990-01-01",
         "address": {
-          "full_address": "Plaza España, Barcelona, 08000, ES",
+          "full_address": "Plaza España 15, Barcelona, 08000, ES",
           "country": "ES",
-          "street": "Plaza España",
           "region": "Barcelona",
           "city": "Barcelona",
+          "street": "Plaza España 15",
           "post_code": "08000"
         },
         "metadata": {
@@ -28,14 +28,14 @@
         }
       },
       "metadata": {
-        "url": "www.example.com"
+        "url": "https://example.com"
       },
       "return_urls": {
-        "fail": "https://example.com/sorry-page",
+        "success": "https://example.com/thank-you-page",
         "pending": "https://example.com/wait-for-it-page",
-        "success": "https://example.com/thank-you-page"
+        "fail": "https://example.com/sorry-page.com"
       },
-      "callback_url": "www.example2.com"
+      "callback_url": "https://example2.com"
     }
   }
 }

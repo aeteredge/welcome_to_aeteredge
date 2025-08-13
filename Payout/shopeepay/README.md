@@ -9,22 +9,61 @@ This document outlines the structure and required fields for the `payout-invoice
 All the following fields are mandatory and must be nested inside the `fields` object of the payload.  
 If any of them is missing or placed outside of `fields`, the request will be rejected.
 
-| JSON Key                | Description                                                        |
-|-------------------------|--------------------------------------------------------------------|
-| `bank_account_name`     | Name of the ShopeePay account holder.                              |
-| `bank_account_number`   | ShopeePay account number or identifier.                            |
+### 🧾 Root Attributes (nested under `attributes`)
+
+| JSON Key       | Description                                                    |
+| -------------- | -------------------------------------------------------------- |
+| `reference_id` | Unique identifier for the payout request (used for tracking).  |
+| `service`      | Must be `"shopeepay_idr"` for ShopeePay payouts in Indonesia.  |
+| `currency`     | Must be `"IDR"` for Indonesian Rupiah.                         |
+| `amount`       | Amount to be paid out (integer, no decimal places).            |
+| `test_mode`    | Set to `true` for sandbox mode, `false` for live transactions. |
+
+---
+
+### 🏦 Fields (nested under `fields`)
+
+| JSON Key              | Description                             |
+| --------------------- | --------------------------------------- |
+| `bank_account_name`   | Name of the ShopeePay account holder.   |
+| `bank_account_number` | ShopeePay account number or identifier. |
 
 📝 **Important:** These keys must be **nested under `fields`**
 
 ---
 
+### 👤 Customer (nested under `customer`)
+
+| JSON Key       | Description                 |
+| -------------- | --------------------------- |
+| `reference_id` | Unique customer identifier. |
+| `name`         | Full name of the customer.  |
+| `email`        | Customer’s email address.   |
+| `phone`        | Customer’s phone number.    |
+
+---
+
+### 🧩 Metadata
+
+| JSON Path      | Description                          |
+| -------------- | ------------------------------------ |
+| `metadata.url` | URL of the company or merchant site. |
+
+---
+
+### ⚙️ Options (nested under `options`)
+
+| JSON Key       | Description                                                                                           |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| `auto_process` | Set to `true` to automatically process the payout, or `false` for manual approval from the dashboard. |
+
+---
+
 ## 🔍 Notes
 
-- `amount` must be provided in **Indonesian Rupiah (IDR)** as an integer (no decimal places).
-- `reference_id` is a unique identifier for the transaction (used for tracking).
-- `test_mode: true` indicates this is a simulated transaction.
-- Set `auto_process` to `true` or `false` to control whether the transaction is processed automatically. If set to `false`, you will need to approve it manually from the dashboard.
-- Additional metadata (e.g., `url`) must be included in the `metadata` object.
-- Customer details (`reference_id`, `phone`, `email`, and `name`) must be provided inside the `customer` object.
+- All amounts must be provided in **Indonesian Rupiah (IDR)** as integers.
+- `reference_id` must be unique for each payout.
+- `test_mode: true` indicates the payout will be processed in sandbox mode.
+- Customer information and metadata must be included as specified above.
 
 ---

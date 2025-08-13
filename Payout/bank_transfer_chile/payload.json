@@ -3,9 +3,9 @@
     "type": "payout-invoice",
     "attributes": {
       "service": "bank_transfer_clp",
+      "reference_id": "64361",
       "currency": "CLP",
       "amount": 99997,
-      "reference_id": "64361",
       "test_mode": true,
       "fields": {
         "bank_code": "1234",
@@ -16,11 +16,11 @@
         "beneficiary_name": "John Doe",
         "sender_full_name": "John Wick"
       },
-      "options": {
-        "auto_process": false
-      },
       "metadata": {
         "url": "https://example.com"
+      },
+      "options": {
+        "auto_process": false
       }
     }
   }

@@ -2,12 +2,12 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
-      "service": "payment_card_eur_hpp",
-      "test_mode": true,
+      "reference_id": "a30ebecb6141541yf141mkj245452",
+      "service": "googlepay_eur_hpp",
       "currency": "EUR",
-      "amount": 10,
-      "reference_id": "a30ebec4-035c-4fc5-8c48-b525ca781f37",
+      "amount": 20,
       "description": "Invoice Example",
+      "test_mode": false,
       "flow": "charge",
       "customer": {
         "reference_id": "1234567890",
@@ -16,25 +16,26 @@
         "phone": "34000000000",
         "date_of_birth": "1990-01-01",
         "address": {
-          "full_address": "Street Name 100",
+          "full_address": "Carrer Entenca 100, Barcelona, 08019, Spain",
           "country": "ES",
           "region": "Barcelona",
           "city": "Barcelona",
-          "post_code": "00000"
+          "street": "Carrer Entenca 100",
+          "post_code": "08019"
         },
         "metadata": {
           "ip": "192.168.1.1"
         }
       },
       "metadata": {
-        "url": "https://www.example.com"
+        "url": "https://example.com"
       },
       "return_urls": {
-        "fail": "https://example.com/sorry-page",
+        "success": "https://example.com/thank-you-page",
         "pending": "https://example.com/wait-for-it-page",
-        "success": "https://example.com/thank-you-page"
+        "fail": "https://example.com/sorry-page.com"
       },
-      "callback_url": "https://test.doc.home"
+      "callback_url": "https://example2.com"
     }
   }
 }

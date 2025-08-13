@@ -20,9 +20,9 @@ It applies to multiple currencies and service types as listed in the [Supported 
 
 ## 🔐 Service Fields (nested under `service_fields`)
 
-| JSON Key             | Description                                |
-| -------------------- | ------------------------------------------ |
-| `blockchain_address` | Blockchain address to receive the payment. |
+| JSON Key             | Description                                                                              |
+| -------------------- | ---------------------------------------------------------------------------------------- |
+| `blockchain_address` | Blockchain address to receive the payment, contact support team for further information. |
 
 ---
 

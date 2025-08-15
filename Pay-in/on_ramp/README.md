@@ -30,43 +30,85 @@ It applies to multiple currencies and service types as listed in the [Supported 
 
 Below are the supported crypto payment HPP services by currency:
 
-### **AUD**
+### **Apple Pay**
 
-- `applepay_crypto_aud_hpp`
-- `googlepay_crypto_aud_hpp`
-- `pay_id_crypto_aud_hpp`
-- `payment_card_crypto_aud_hpp`
+| Currency | Service ID                |
+| -------- | ------------------------- |
+| AUD      | `applepay_crypto_aud_hpp` |
+| CAD      | `applepay_crypto_cad_hpp` |
+| EUR      | `applepay_crypto_eur_hpp` |
+| USD      | `applepay_crypto_usd_hpp` |
 
-### **CAD**
+---
 
-- `applepay_crypto_cad_hpp`
-- `googlepay_crypto_cad_hpp`
-- `interac_crypto_cad_hpp`
-- `payment_card_crypto_cad_hpp`
+### **Google Pay**
 
-### **EUR**
+| Currency | Service ID                 |
+| -------- | -------------------------- |
+| AUD      | `googlepay_crypto_aud_hpp` |
+| CAD      | `googlepay_crypto_cad_hpp` |
+| EUR      | `googlepay_crypto_eur_hpp` |
+| USD      | `googlepay_crypto_usd_hpp` |
 
-- `payment_card_crypto_eur_hpp`
-- `applepay_crypto_eur_hpp`
-- `googlepay_crypto_eur_hpp`
-- `sepa_transfer_crypto_eur_hpp`
+---
 
-### **USD**
+### **Pay ID**
 
-- `applepay_crypto_usd_hpp`
-- `googlepay_crypto_usd_hpp`
-- `payment_card_crypto_usd_hpp`
+| Currency | Service ID              |
+| -------- | ----------------------- |
+| AUD      | `pay_id_crypto_aud_hpp` |
 
-### **Other Currencies**
+---
 
-- `payment_card_crypto_brl_hpp` — **BRL**
-- `payment_card_crypto_dkk_hpp` — **DKK**
-- `payment_card_crypto_jpy_hpp` — **JPY**
-- `payment_card_crypto_mxn_hpp` — **MXN**
-- `payment_card_crypto_nok_hpp` — **NOK**
-- `payment_card_crypto_pln_hpp` — **PLN**
-- `payment_card_crypto_sek_hpp` — **SEK**
-- `payment_card_crypto_try_hpp` — **TRY**
+### **Payment Card**
+
+| Currency | Service ID                    |
+| -------- | ----------------------------- |
+| AUD      | `payment_card_crypto_aud_hpp` |
+| CAD      | `payment_card_crypto_cad_hpp` |
+| EUR      | `payment_card_crypto_eur_hpp` |
+| USD      | `payment_card_crypto_usd_hpp` |
+| BRL      | `payment_card_crypto_brl_hpp` |
+| DKK      | `payment_card_crypto_dkk_hpp` |
+| JPY      | `payment_card_crypto_jpy_hpp` |
+| MXN      | `payment_card_crypto_mxn_hpp` |
+| NOK      | `payment_card_crypto_nok_hpp` |
+| PLN      | `payment_card_crypto_pln_hpp` |
+| SEK      | `payment_card_crypto_sek_hpp` |
+| TRY      | `payment_card_crypto_try_hpp` |
+
+---
+
+### **Interac**
+
+| Currency | Service ID               |
+| -------- | ------------------------ |
+| CAD      | `interac_crypto_cad_hpp` |
+
+---
+
+### **Open Banking**
+
+| Currency | Service ID                     |
+| -------- | ------------------------------ |
+| EUR      | `sepa_transfer_crypto_eur_hpp` |
+| GBP      | `sepa_transfer_crypto_gbp_hpp` |
+
+---
+
+### **Pix**
+
+| Currency | Service ID           |
+| -------- | -------------------- |
+| BRL      | `pix_crypto_brl_hpp` |
+
+---
+
+### **iDEAL**
+
+| Currency | Service ID             |
+| -------- | ---------------------- |
+| EUR      | `ideal_crypto_eur_hpp` |
 
 ---
 

@@ -26,9 +26,10 @@ It applies to multiple currencies and service types as listed in the [Supported 
 
 ---
 
-## 💱 Supported Services
+## 💱 Supported Services (by Service Type)
 
-Below are the supported crypto payment HPP services by currency:
+Below is the list of supported crypto payment HPP services **organized by service type**.  
+Each section shows the available currencies and their corresponding service IDs.
 
 ### **Apple Pay**
 

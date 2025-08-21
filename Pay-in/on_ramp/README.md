@@ -42,6 +42,17 @@ Each section shows the available currencies and their corresponding service IDs.
 
 ---
 
+### **Bancontact / Klarna / Open Banking / Sofort**
+
+| Currency | Service ID                     |
+| -------- | ------------------------------ |
+| EUR      | `sepa_transfer_crypto_eur_hpp` |
+| GBP      | `sepa_transfer_crypto_gbp_hpp` |
+
+ℹ️ Klarna, Sofort, and Bancontact are available **only in EUR**.
+
+---
+
 ### **Google Pay**
 
 | Currency | Service ID                 |
@@ -50,6 +61,22 @@ Each section shows the available currencies and their corresponding service IDs.
 | CAD      | `googlepay_crypto_cad_hpp` |
 | EUR      | `googlepay_crypto_eur_hpp` |
 | USD      | `googlepay_crypto_usd_hpp` |
+
+---
+
+### **iDEAL**
+
+| Currency | Service ID             |
+| -------- | ---------------------- |
+| EUR      | `ideal_crypto_eur_hpp` |
+
+---
+
+### **Interac**
+
+| Currency | Service ID               |
+| -------- | ------------------------ |
+| CAD      | `interac_crypto_cad_hpp` |
 
 ---
 
@@ -66,34 +93,17 @@ Each section shows the available currencies and their corresponding service IDs.
 | Currency | Service ID                    |
 | -------- | ----------------------------- |
 | AUD      | `payment_card_crypto_aud_hpp` |
-| CAD      | `payment_card_crypto_cad_hpp` |
-| EUR      | `payment_card_crypto_eur_hpp` |
-| USD      | `payment_card_crypto_usd_hpp` |
 | BRL      | `payment_card_crypto_brl_hpp` |
+| CAD      | `payment_card_crypto_cad_hpp` |
 | DKK      | `payment_card_crypto_dkk_hpp` |
+| EUR      | `payment_card_crypto_eur_hpp` |
 | JPY      | `payment_card_crypto_jpy_hpp` |
 | MXN      | `payment_card_crypto_mxn_hpp` |
 | NOK      | `payment_card_crypto_nok_hpp` |
 | PLN      | `payment_card_crypto_pln_hpp` |
 | SEK      | `payment_card_crypto_sek_hpp` |
 | TRY      | `payment_card_crypto_try_hpp` |
-
----
-
-### **Interac**
-
-| Currency | Service ID               |
-| -------- | ------------------------ |
-| CAD      | `interac_crypto_cad_hpp` |
-
----
-
-### **Open Banking**
-
-| Currency | Service ID                     |
-| -------- | ------------------------------ |
-| EUR      | `sepa_transfer_crypto_eur_hpp` |
-| GBP      | `sepa_transfer_crypto_gbp_hpp` |
+| USD      | `payment_card_crypto_usd_hpp` |
 
 ---
 
@@ -102,14 +112,6 @@ Each section shows the available currencies and their corresponding service IDs.
 | Currency | Service ID           |
 | -------- | -------------------- |
 | BRL      | `pix_crypto_brl_hpp` |
-
----
-
-### **iDEAL**
-
-| Currency | Service ID             |
-| -------- | ---------------------- |
-| EUR      | `ideal_crypto_eur_hpp` |
 
 ---
 

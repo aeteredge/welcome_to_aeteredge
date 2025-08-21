@@ -1,6 +1,6 @@
-# 📄 Payload for `payout-invoice` (Colombia - CO)
+# 📄 Payload for `payout-invoice` (Colombia - COP)
 
-This document outlines the structure and required fields for the `payout-invoice` payload using the `nequi_cop` service, which supports **Nequi wallet transfers in Colombia (CO)**.
+This document outlines the structure and required fields for the `payout-invoice` payload using the `nequi_cop` service, which supports **Nequi wallet transfers in Colombia (COP)**.
 
 ---
 

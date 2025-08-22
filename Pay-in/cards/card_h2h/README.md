@@ -4,10 +4,10 @@ This document outlines the structure and required fields for the `payment-invoic
 
 ---
 
-## ✅ Required Fields – Payment Invoice (HPP)
+## ✅ Required Fields – Payment Invoice (H2H)
 
 All the following fields are mandatory and must be correctly nested inside the respective objects of the payload.  
-If any of them is missing, the request will be rejected.
+If any of them is missing, the request will be rejected.o que 
 
 ### 🧾 Root Attributes (nested under `attributes`)
 
@@ -19,7 +19,6 @@ If any of them is missing, the request will be rejected.
 | `amount`              | Amount to be paid.                                                                       |
 | `description`         | Description of the payment purpose.                                                      |
 | `test_mode`           | Set to `true` for test/sandbox transactions.                                             |
-| `flow`                | Payment flow. Use `"charge"` for hosted page flow.                                       |
 | `return_urls.success` | Redirect URL after a successful payment.                                                 |
 | `return_urls.pending` | Redirect URL while payment is pending.                                                   |
 | `return_urls.fail`    | Redirect URL after a failed payment.                                                     |

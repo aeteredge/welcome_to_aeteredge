@@ -1,6 +1,7 @@
 # 📄 Payload for `payment-invoice` (Indonesia - ID)
 
-This document outlines the structure and required fields for the `payment-invoice` payload using the `bank_idr_hpp` service, which supports **pay-ins via virtual accounts (HPP flow) in Indonesia (IDR)**.
+This document outlines the structure and required fields for the `payment-invoice` payload for **Virtual Account (VA) pay-ins via HPP in Indonesia (IDR)**.  
+Select the **service** from the list in [Supported Banks and Their Corresponding Services](#-supported-banks-and-their-corresponding-services);
 
 ---
 
@@ -66,14 +67,14 @@ If any of them is missing, the request will be rejected.
 
 To use one of the supported banks, set the corresponding `service` value in the payload:
 
-| Bank Name    | Service Name         |
-| ------------ | -------------------- |
-| BCA Bank     | `bca_va_idr_hpp`     |
-| BNI Bank     | `bni_va_idr_hpp`     |
-| BRI Bank     | `bri_va_idr_hpp`     |
-| CIMB         | `cimb_ca_idr_hpp`    |
-| Mandiri Bank | `mandiri_va_idr_hpp` |
-| Permata Bank | `permata_bank_idr`   |
+| Bank Name    | Service Name           |
+| ------------ | ---------------------- |
+| BCA Bank     | `bca_va_idr_hpp`       |
+| BNI Bank     | `bni_va_idr_hpp`       |
+| BRI Bank     | `bri_va_idr_hpp`       |
+| CIMB         | `cimb_ca_idr_hpp`      |
+| Mandiri Bank | `mandiri_va_idr_hpp`   |
+| Permata Bank | `permata_bank_idr_hpp` |
 
 Make sure the correct `service` is selected based on the beneficiary's bank.
 

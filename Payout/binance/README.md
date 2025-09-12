@@ -44,8 +44,13 @@ If any are missing or misplaced, the request will be rejected.
   "recipient_id": "test@mail.com"
 }
 ```
-
 ---
+
+### ⚙️ Options (nested under `options`)
+
+| JSON Key       | Description                                                                                           |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| `auto_process` | Set to `true` to automatically process the payout, or `false` for manual approval from the dashboard. |
 
 ## 🔍 Notes
 

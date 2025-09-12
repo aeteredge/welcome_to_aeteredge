@@ -1,0 +1,26 @@
+{
+  "data": {
+    "type": "payment-invoices",
+    "attributes": {
+      "reference_id": "45455656l4545hhtrhtr645yhry",
+      "service": "pagomovil_ves_invoice",
+      "currency": "VES",
+      "amount": 100000,
+      "description": "Venezuela",
+      "test_mode": true,
+
+      "metadata": {
+        "ip": "186.2.45.72"
+      }
+    },
+    "metadata": {
+      "url": "https://example.com"
+    },
+    "return_urls": {
+      "success": "https://example.com/thank-you-page",
+      "pending": "https://example.com/wait-for-it-page",
+      "fail": "https://example.com/sorry-page.com"
+    },
+    "callback_url": "https://example2.com"
+  }
+}

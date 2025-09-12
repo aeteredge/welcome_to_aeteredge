@@ -9,6 +9,9 @@
       "fields": {
         "recipient_type": "BINANCE_ID",
         "recipient_id": "12345678"
+      },
+      "options": {
+        "auto_process": false
       }
     }
   }

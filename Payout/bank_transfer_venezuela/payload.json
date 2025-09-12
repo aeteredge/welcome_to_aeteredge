@@ -1,0 +1,24 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "service": "bank_transfer_ves",
+      "currency": "VES",
+      "amount": 10,
+      "reference_id": "a5c753bf1f6570",
+      "test_mode": false,
+      "description": "Payout Invoice Example",
+      "fields": {
+        "bank_code": "0134",
+        "bank_account": "01340120941203045014",
+        "beneficiary_document_type": "CI",
+        "beneficiary_document_id": "10515819",
+        "beneficiary_name": "Pedro Perez"
+      },
+      "callback_url": "https://example.com"
+    },
+    "options": {
+      "auto_process": false
+    }
+  }
+}

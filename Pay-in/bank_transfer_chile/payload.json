@@ -3,7 +3,7 @@
     "type": "payment-invoices",
     "attributes": {
       "reference_id": "567",
-      "service": "bank_transfer_clp_invoice",      
+      "service": "bank_transfer_clp_hpp",      
       "currency": "CLP",
       "amount": 99997,
       "description": "Chile",

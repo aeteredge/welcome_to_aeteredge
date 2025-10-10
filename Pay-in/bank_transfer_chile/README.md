@@ -1,6 +1,6 @@
 # 📄 Payload for `payment-invoices` (Chile - CL)
 
-This document outlines the structure and required fields for the `payment-invoices` payload using the `bank_transfer_clp_invoice` service, which supports **pay-ins via bank transfers in Chile (CLP)**.
+This document outlines the structure and required fields for the `payment-invoices` payload using the `bank_transfer_clp_hpp` service, which supports **pay-ins via bank transfers in Chile (CLP)**.
 
 ---
 
@@ -14,7 +14,7 @@ If any of them is missing, the request will be rejected.
 | JSON Key              | Description                                                         |
 | --------------------- | ------------------------------------------------------------------- |
 | `reference_id`        | Unique identifier for the payment request.                          |
-| `service`             | Must be `"bank_transfer_clp_invoice"` for CL bank transfer pay-ins. |
+| `service`             | Must be `"bank_transfer_clp_hpp"` for CL bank transfer pay-ins. |
 | `currency`            | Must be `"CLP"` for Chilean Pesos.                                  |
 | `amount`              | Amount to be paid.                                                  |
 | `description`         | Description of the payment purpose.                                 |

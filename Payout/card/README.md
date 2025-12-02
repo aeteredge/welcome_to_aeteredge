@@ -38,10 +38,11 @@ If any of them is missing or misplaced, the request will be rejected.
 
 ### 💳 Context (nested under `context.card`)
 
-| JSON Key    | Description                              |
-| ----------- | ---------------------------------------- |
-| `exp_month` | Card's expiration month (e.g., `"09"`).  |
-| `exp_year`  | Card's expiration year (e.g., `"2030"`). |
+| JSON Key      | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
+| `card_holder` | Full name of the card owner, exactly as printed on the card. |
+| `exp_month`   | Card's expiration month (e.g., `"09"`).                      |
+| `exp_year`    | Card's expiration year (e.g., `"30"`).                       |
 
 ### 👤 Customer (nested under `customer`)
 

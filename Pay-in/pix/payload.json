@@ -2,37 +2,22 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
-      "reference_id": "546",
-      "service": "pix_brl_invoice",
+      "reference_id": "546124554125412",
+      "service": "pix_brl_hpp",
       "currency": "BRL",
-      "amount": 99997,
-      "description": "deposit",
-      "test_mode": true,
-      "service_fields": {
-        "cpf_number": "12345678909"
-      },
+      "amount": 250,
+      "description": "Brazil",
+      "test_mode": true,      
       "customer": {
         "reference_id": "c592d-4b16edddd",
         "individual_tax_id": "12345678909",
         "name": "John Wick",
-        "email": "johnwick@outlook.com",
-        "phone": "5511916645678",
-        "date_of_birth": "1999-09-28",
-        "address": {
-          "full_address": "Praça da Sé 1, São Paulo - SP, 01001-000, Brasil",
-          "country": "BR",
-          "region": "São Paulo",
-          "city": "São Paulo",
-          "street": "Praça da Sé 1",
-          "post_code": "01001-000"
-        },
+        "email": "johnwick@gmail.com",
+        "phone": "5511916645678",        
         "metadata": {
           "ip": "177.10.45.72"
         }
-      },
-      "metadata": {
-        "url": "https://example.com"
-      },
+      },     
       "return_urls": {
         "success": "https://example.com/thank-you-page",
         "pending": "https://example.com/wait-for-it-page",

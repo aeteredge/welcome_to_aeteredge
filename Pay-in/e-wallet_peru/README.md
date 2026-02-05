@@ -1,6 +1,6 @@
-# 📄 Payload for `payment-invoices` (Brazil – BR)
+# 📄 Payload for `payment-invoices` (Peru – PE)
 
-This document outlines the structure and required fields for the `payment-invoices` payload using the **`pix_brl_hpp`** service, which supports **PIX pay-ins in Brazil (BRL)** through a **Hosted Payment Page (HPP)**.
+This document outlines the structure and required fields for the `payment-invoices` payload using the **`wallet_aggregated_pen_hpp`** service, which supports **aggregated wallet pay-ins in Peru (PEN)** through a **Hosted Payment Page (HPP)**.
 
 ---
 
@@ -16,8 +16,8 @@ If any of them is missing or invalid, the request will be rejected.
 | JSON Key              | Description                                         |
 | --------------------- | --------------------------------------------------- |
 | `reference_id`        | Unique identifier for the payment request.          |
-| `service`             | Must be `"pix_brl_hpp"`.                            |
-| `currency`            | Must be `"BRL"` (Brazilian Real).                   |
+| `service`             | Must be `"wallet_aggregated_pen_hpp"`.              |
+| `currency`            | Must be `"PEN"` (Peruvian Sol).                     |
 | `amount`              | Amount to be paid.                                  |
 | `description`         | Description of the payment purpose.                 |
 | `test_mode`           | Set to `true` for test/sandbox transactions.        |
@@ -34,7 +34,7 @@ If any of them is missing or invalid, the request will be rejected.
 | JSON Key            | Description                                          |
 | ------------------- | ---------------------------------------------------- |
 | `reference_id`      | Unique identifier of the customer.                   |
-| `individual_tax_id` | Customer tax identification number (CPF).            |
+| `individual_tax_id` | Customer identification number (DNI / tax ID).       |
 | `name`              | Full name of the customer.                           |
 | `email`             | Email address of the customer.                       |
 | `phone`             | Phone number of the customer (international format). |
@@ -44,8 +44,9 @@ If any of them is missing or invalid, the request will be rejected.
 
 ## 🔍 Notes
 
-- All amounts must be provided in **Brazilian Reais (BRL)**.
-- The `pix_brl_hpp` service uses a **Hosted Payment Page (HPP)** where the customer completes the PIX payment (QR Code / copy-paste).
+- All amounts must be provided in **Peruvian Soles (PEN)**.
+- The `wallet_aggregated_pen_hpp` service uses a **Hosted Payment Page (HPP)** where the customer selects and completes the payment using an available wallet.
 - Use `test_mode: true` to simulate transactions in a sandbox environment.
-- The `individual_tax_id` must be a **valid CPF** for production transactions.
+- The `individual_tax_id` must be valid according to Peruvian regulations for production transactions.
 - All `return_urls` and the `callback_url` must be **HTTPS** endpoints.
+

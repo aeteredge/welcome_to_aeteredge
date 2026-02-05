@@ -1,6 +1,6 @@
 # 📄 Payload for `payment-invoices` (Mexico – MX)
 
-This document outlines the structure and required fields for the `payment-invoices` payload using the **`bank_transfer_mxn_hpp`** service, which supports **bank transfer pay-ins in Mexico (MXN)** through a **Hosted Payment Page (HPP)**.
+This document outlines the structure and required fields for the `payment-invoices` payload using the **`wallet_aggregated_mxn_hpp`** service, which supports **aggregated wallet pay-ins in Mexico (MXN)** through a **Hosted Payment Page (HPP)**.
 
 ---
 
@@ -16,7 +16,7 @@ If any of them is missing or invalid, the request will be rejected.
 | JSON Key              | Description                                         |
 | --------------------- | --------------------------------------------------- |
 | `reference_id`        | Unique identifier for the payment request.          |
-| `service`             | Must be `"bank_transfer_mxn_hpp"`.                  |
+| `service`             | Must be `"wallet_aggregated_mxn_hpp"`.              |
 | `currency`            | Must be `"MXN"` (Mexican Peso).                     |
 | `amount`              | Amount to be paid.                                  |
 | `description`         | Description of the payment purpose.                 |
@@ -31,22 +31,21 @@ If any of them is missing or invalid, the request will be rejected.
 
 ### 👤 Customer (nested under `customer`)
 
-| JSON Key            | Description                                                              |
-| ------------------- | ------------------------------------------------------------------------ |
-| `reference_id`      | Unique identifier of the customer.                                       |
-| `individual_tax_id` | Customer identification number (e.g. RFC / CURP, depending on the flow). |
-| `name`              | Full name of the customer.                                               |
-| `email`             | Email address of the customer.                                           |
-| `phone`             | Phone number of the customer (international format).                     |
-| `metadata.ip`       | IP address of the customer.                                              |
+| JSON Key            | Description                                                                |
+| ------------------- | -------------------------------------------------------------------------- |
+| `reference_id`      | Unique identifier of the customer.                                         |
+| `individual_tax_id` | Customer identification number (e.g. RFC / CURP, depending on the wallet). |
+| `name`              | Full name of the customer.                                                 |
+| `email`             | Email address of the customer.                                             |
+| `phone`             | Phone number of the customer (international format).                       |
+| `metadata.ip`       | IP address of the customer.                                                |
 
 ---
 
 ## 🔍 Notes
 
 - All amounts must be provided in **Mexican Pesos (MXN)**.
-- The `bank_transfer_mxn_hpp` service allows customers to complete payments via **local bank transfer** in Mexico.
-- The payment flow is handled via a **Hosted Payment Page (HPP)**.
+- The `wallet_aggregated_mxn_hpp` service uses a **Hosted Payment Page (HPP)** where the customer selects and completes the payment using one of the available wallets.
 - Use `test_mode: true` to simulate transactions in a sandbox environment.
 - The `individual_tax_id` must be valid according to Mexican regulations for production transactions.
 - All `return_urls` and the `callback_url` must be **HTTPS** endpoints.

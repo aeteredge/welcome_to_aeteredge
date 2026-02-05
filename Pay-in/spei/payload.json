@@ -2,40 +2,28 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
-      "reference_id": "5642262321514112121255122",
-      "service": "spei_mxn_invoice",
+      "reference_id": "1117276156",
+      "service": "bank_transfer_mxn_hpp",
       "currency": "MXN",
-      "amount": 99997,
+      "amount": 9897,
       "description": "Mexico",
       "test_mode": true,
       "customer": {
         "reference_id": "c592d-4b1dd",
-        "individual_tax_id": "12345678",
+        "individual_tax_id": "4x089587",
         "name": "John Wick",
         "email": "johnwick@gmail.com",
-        "phone": "5215512345678",
-        "date_of_birth": "1999-09-28",
-        "address": {
-          "full_address": "Av. Insurgentes Sur 1234, Colonia del Valle, 03100, Ciudad de México, México",
-          "country": "MX",
-          "region": "Ciudad de México",
-          "city": "Ciudad de México",
-          "street": "Av. Insurgentes Sur",
-          "post_code": "03100"
-        },
+        "phone": "5491121256789",
         "metadata": {
-          "ip": "189.203.45.120"
+          "ip": "190.16.34.87"
         }
-      },
-      "metadata": {
-        "url": "https://example.com"
       },
       "return_urls": {
         "success": "https://example.com/thank-you-page",
         "pending": "https://example.com/wait-for-it-page",
         "fail": "https://example.com/sorry-page.com"
       },
-      "callback_url": "https://example2.com"
+      "callback_url": "https://example.com"
     }
   }
 }

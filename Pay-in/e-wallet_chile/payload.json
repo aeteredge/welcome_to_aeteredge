@@ -2,8 +2,8 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
-      "reference_id": "111777877156",
-      "service": "bank_transfer_clp_hpp",
+      "reference_id": "1117776156",
+      "service": "wallet_aggregated_clp_hpp",
       "currency": "CLP",
       "amount": 9897,
       "description": "Chile",
@@ -13,11 +13,11 @@
         "individual_tax_id": "4x089587",
         "name": "John Wick",
         "email": "johnwick@gmail.com",
-        "phone": "549112124546789",
+        "phone": "5491121246789",
         "metadata": {
           "ip": "190.16.34.87"
         }
-      },     
+      },
       "return_urls": {
         "success": "https://example.com/thank-you-page",
         "pending": "https://example.com/wait-for-it-page",

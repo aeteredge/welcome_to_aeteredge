@@ -62,7 +62,7 @@ If any of them is missing, the request will be rejected.
 
 ## 🔍 Notes
 
-- All amounts must be provided in **Colombian Pesos (COP)** as whole numbers (integer).
+- All amounts must be provided in **Colombian Pesos (COP)**.
 - Use `test_mode: true` to simulate transactions in a sandbox environment.
 - Callback and redirect URLs must be HTTPS for secure communications.
 - This service uses a hosted payment page (HPP) for PSE transactions.

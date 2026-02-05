@@ -1,6 +1,6 @@
-# 📄 Payload for `payment-invoices` (Argentina - AR)
+# 📄 Payload for `payment-invoices` (Argentina – AR)
 
-This document outlines the structure and required fields for the `payment-invoices` payload using the `bank_transfer_ars_invoice` service, which supports **pay-ins via bank transfers in Argentina (ARS)**.
+This document outlines the structure and required fields for the `payment-invoices` payload using the **`bank_transfer_ars_hpp`** service, which supports **pay-ins via bank transfers in Argentina (ARS)** through a **Hosted Payment Page (HPP)**.
 
 ---
 
@@ -9,33 +9,36 @@ This document outlines the structure and required fields for the `payment-invoic
 All the following fields are mandatory and must be correctly nested inside the respective objects of the payload.  
 If any of them is missing, the request will be rejected.
 
-### 🧾 Root Attributes (nested under `attributes`)
+---
 
-| JSON Key              | Description                                                         |
-| --------------------- | ------------------------------------------------------------------- |
-| `reference_id`        | Unique identifier for the payment request.                          |
-| `service`             | Must be `"bank_transfer_ars_invoice"` for AR bank transfer pay-ins. |
-| `currency`            | Must be `"ARS"` for Argentine Pesos.                                |
-| `amount`              | Amount to be paid.                                                  |
-| `description`         | Description of the payment purpose.                                 |
-| `test_mode`           | Set to `true` for test/sandbox transactions.                        |
-| `return_urls.success` | Redirect URL after a successful payment.                            |
-| `return_urls.pending` | Redirect URL while payment is pending.                              |
-| `return_urls.fail`    | Redirect URL after a failed payment.                                |
-| `callback_url`        | URL to receive asynchronous status updates.                         |
+### 🧾 Root Attributes (nested under `data.attributes`)
+
+| JSON Key              | Description                                                     |
+| --------------------- | --------------------------------------------------------------- |
+| `reference_id`        | Unique identifier for the payment request.                      |
+| `service`             | Must be `"bank_transfer_ars_hpp"` for AR bank transfer pay-ins. |
+| `currency`            | Must be `"ARS"` for Argentine Pesos.                            |
+| `amount`              | Amount to be paid.                                              |
+| `test_mode`           | Set to `true` for test/sandbox transactions.                    |
+| `customer`            | Customer information object.                                    |
+| `service_fields`      | Service-specific required fields.                               |
+| `return_urls.success` | Redirect URL after a successful payment.                        |
+| `return_urls.pending` | Redirect URL while the payment is pending.                      |
+| `return_urls.fail`    | Redirect URL after a failed payment.                            |
+| `callback_url`        | URL to receive asynchronous payment status updates.             |
 
 ---
 
 ### 👤 Customer (nested under `customer`)
 
-| JSON Key            | Description                               |
-| ------------------- | ----------------------------------------- |
-| `reference_id`      | Unique identifier of the customer.        |
-| `individual_tax_id` | The customer's tax identification number. |
-| `name`              | Full name of the customer.                |
-| `email`             | Email address of the customer.            |
-| `phone`             | Phone number of the customer.             |
-| `date_of_birth`     | Date of birth in the format `YYYY-MM-DD`. |
+| JSON Key        | Description                               |
+| --------------- | ----------------------------------------- |
+| `reference_id`  | Unique identifier of the customer.        |
+| `name`          | Full name of the customer.                |
+| `email`         | Email address of the customer.            |
+| `phone`         | Phone number of the customer.             |
+| `date_of_birth` | Date of birth in the format `YYYY-MM-DD`. |
+| `address`       | Customer address information.             |
 
 ---
 
@@ -52,28 +55,18 @@ If any of them is missing, the request will be rejected.
 
 ---
 
-### 🧩 Metadata
+### 🧩 Service Fields
 
-| JSON Path              | Description                 |
-| ---------------------- | --------------------------- |
-| `customer.metadata.ip` | IP address of the customer. |
-| `metadata.url`         | URL of the company.         |
+| JSON Key      | Description                                  |
+| ------------- | -------------------------------------------- |
+| `document_id` | Customer identification document (e.g. DNI). |
 
 ---
 
 ## 🔍 Notes
 
-- All amounts must be provided in **Argentine Pesos (ARS)** as whole numbers (integer).
+- All amounts must be provided in **Argentine Pesos (ARS)**.
+- The `bank_transfer_ars_hpp` service uses a **Hosted Payment Page (HPP)** where the customer is redirected to complete the payment.
 - Use `test_mode: true` to simulate transactions in a sandbox environment.
-- Callback and redirect URLs must be HTTPS for secure communications.
-
-## 🎯 Approving transactions in sandbox
-
-When using `test_mode: true`, you can simulate different payment outcomes by setting specific values in the `amount` field:
-
-| Test Amount | Behavior                                    |
-| ----------- | ------------------------------------------- |
-| `99997`     | Triggers a **successful** payment callback. |
-| `99999`     | Triggers a **declined** payment callback.   |
-
----
+- The `document_id` field is mandatory for customer validation in Argentina.
+- All `return_urls` and the `callback_url` must be **HTTPS** endpoints.

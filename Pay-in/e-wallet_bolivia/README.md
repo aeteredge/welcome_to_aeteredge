@@ -1,6 +1,6 @@
-# 📄 Payload for `payment-invoices` (Brazil – BR)
+# 📄 Payload for `payment-invoices` (Bolivia – BO)
 
-This document outlines the structure and required fields for the `payment-invoices` payload using the **`pix_brl_hpp`** service, which supports **PIX pay-ins in Brazil (BRL)** through a **Hosted Payment Page (HPP)**.
+This document outlines the structure and required fields for the `payment-invoices` payload using the **`wallet_aggregated_bob_hpp`** service, which supports **wallet-based pay-ins in Bolivia (BOB)** through a **Hosted Payment Page (HPP)**.
 
 ---
 
@@ -16,8 +16,8 @@ If any of them is missing or invalid, the request will be rejected.
 | JSON Key              | Description                                         |
 | --------------------- | --------------------------------------------------- |
 | `reference_id`        | Unique identifier for the payment request.          |
-| `service`             | Must be `"pix_brl_hpp"`.                            |
-| `currency`            | Must be `"BRL"` (Brazilian Real).                   |
+| `service`             | Must be `"wallet_aggregated_bob_hpp"`.              |
+| `currency`            | Must be `"BOB"` (Bolivian Boliviano).               |
 | `amount`              | Amount to be paid.                                  |
 | `description`         | Description of the payment purpose.                 |
 | `test_mode`           | Set to `true` for test/sandbox transactions.        |
@@ -31,21 +31,22 @@ If any of them is missing or invalid, the request will be rejected.
 
 ### 👤 Customer (nested under `customer`)
 
-| JSON Key            | Description                                          |
-| ------------------- | ---------------------------------------------------- |
-| `reference_id`      | Unique identifier of the customer.                   |
-| `individual_tax_id` | Customer tax identification number (CPF).            |
-| `name`              | Full name of the customer.                           |
-| `email`             | Email address of the customer.                       |
-| `phone`             | Phone number of the customer (international format). |
-| `metadata.ip`       | IP address of the customer.                          |
+| JSON Key            | Description                        |
+| ------------------- | ---------------------------------- |
+| `reference_id`      | Unique identifier of the customer. |
+| `individual_tax_id` | Customer identification number.    |
+| `name`              | Full name of the customer.         |
+| `email`             | Email address of the customer.     |
+| `phone`             | Phone number of the customer.      |
+| `metadata.ip`       | IP address of the customer.        |
 
 ---
 
 ## 🔍 Notes
 
-- All amounts must be provided in **Brazilian Reais (BRL)**.
-- The `pix_brl_hpp` service uses a **Hosted Payment Page (HPP)** where the customer completes the PIX payment (QR Code / copy-paste).
+- All amounts must be provided in **Bolivian Bolivianos (BOB)**.
+- The `wallet_aggregated_bob_hpp` service uses a **Hosted Payment Page (HPP)** where the customer is redirected to complete the payment using an aggregated wallet flow.
 - Use `test_mode: true` to simulate transactions in a sandbox environment.
-- The `individual_tax_id` must be a **valid CPF** for production transactions.
 - All `return_urls` and the `callback_url` must be **HTTPS** endpoints.
+
+

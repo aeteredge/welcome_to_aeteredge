@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "payment-invoice",
+    "attributes": {
+      "service": "bank_transfer_ars_hpp",
+      "currency": "ARS",
+      "amount": 15000,
+      "reference_id": "f3d5a910-6b64-4fd5-843e-b441536-674b441a71ef",
+      "customer": {
+        "reference_id": "994df079-6695-46ae-99bb-a635f7bbd2bf",
+        "individual_tax_id": "42089587"
+      },      
+      "service_fields": {
+        "document_id": "42089587",
+        "document_type": "dni",
+        "account_number": "4758694758694758694758"
+      },
+      "test_mode": true,      
+      "return_urls": {
+        "success": "https://example.com/thank-you-page",
+        "pending": "https://example.com/wait-for-it-page",
+        "fail": "https://example.com/sorry-page.com"
+      },
+      "callback_url": "https://example.com"
+    }
+  }
+}

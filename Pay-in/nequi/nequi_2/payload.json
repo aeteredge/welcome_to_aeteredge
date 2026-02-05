@@ -2,22 +2,22 @@
   "data": {
     "type": "payment-invoices",
     "attributes": {
-      "reference_id": "111777877156",
-      "service": "bank_transfer_clp_hpp",
-      "currency": "CLP",
+      "reference_id": "1117753574474447156",
+      "service": "nequi_cop_hpp",
+      "currency": "COP",
       "amount": 9897,
-      "description": "Chile",
+      "description": "Colombia",
       "test_mode": true,
       "customer": {
         "reference_id": "c592d-4b1dd",
         "individual_tax_id": "4x089587",
         "name": "John Wick",
         "email": "johnwick@gmail.com",
-        "phone": "549112124546789",
+        "phone": "5491121256789",
         "metadata": {
           "ip": "190.16.34.87"
         }
-      },     
+      },
       "return_urls": {
         "success": "https://example.com/thank-you-page",
         "pending": "https://example.com/wait-for-it-page",

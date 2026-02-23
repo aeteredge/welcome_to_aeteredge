@@ -7,19 +7,22 @@
       "currency": "CLP",
       "amount": 99997,
       "test_mode": true,
-      "fields": {
-        "bank_code": "1234",
-        "account_type": "CC",
-        "bank_account": "420895871234",
-        "beneficiary_document_type": "CE",
-        "beneficiary_document_id": "42089587",
-        "beneficiary_name": "John Doe",
-        "sender_full_name": "John Wick"
+      "customer": {
+        "reference_id": "51443c0c-ef86-4cdf-b-95715044ba70",
+        "name": "John Wick",
+        "email": "johnwick@gmail.com"
       },
-      "metadata": {
-        "url": "https://example.com"
+      "fields": {
+        "beneficiary_document_id": "114741671",
+        "bank_code": "001",
+        "account_number": "123456789",
+        "account_type": "SAVINGS",
+        "beneficiary_document_type": "RUT"
       },
       "options": {
+        "attempts_limit": 0,
+        "split_mode": false,
+        "allow_partially": false,
         "auto_process": false
       }
     }

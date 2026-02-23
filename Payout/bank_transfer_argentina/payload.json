@@ -7,15 +7,16 @@
       "currency": "ARS",
       "amount": 99997,
       "test_mode": true,
+      "customer": {
+        "reference_id": "ec346e4d-5af-b96e-6c699c709234",
+        "name": "John Wick"
+      },
       "fields": {
-        "account_number": "1234584",
-        "account_type": "CBU"
-      },
-      "metadata": {
-        "url": "https://example.com"
-      },
-      "options": {
-        "auto_process": false
+        "account_type": "SAVINGS",
+        "bank_code": "17",
+        "beneficiary_document_type": "DNI",
+        "beneficiary_document_id": "12345678909",
+        "account_number": "14585811118968"
       }
     }
   }

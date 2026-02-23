@@ -1,6 +1,6 @@
-# 📄 Payload for `payout-invoice` (PIX – Brazil – BRL)
+# 📄 Payload for `payout-invoice` (Transfiya – Colombia – COP)
 
-This document outlines the structure and required fields for the `payout-invoice` payload using the `pix_brl` service, which supports **PIX payouts in Brazil (BRL)**.
+This document outlines the structure and required fields for the `payout-invoice` payload using the `transfiya_cop` service, which supports **Transfiya payouts in Colombia (COP)**.
 
 ---
 
@@ -16,8 +16,8 @@ If any of them is missing or invalid, the request will be rejected.
 | JSON Key       | Description                                                                   |
 | -------------- | ----------------------------------------------------------------------------- |
 | `reference_id` | Unique identifier for the payout request (used for tracking and idempotency). |
-| `service`      | Must be `"pix_brl"` for PIX payouts in Brazil.                                |
-| `currency`     | Must be `"BRL"` (Brazilian Real).                                             |
+| `service`      | Must be `"transfiya_cop"` for Transfiya payouts in Colombia.                  |
+| `currency`     | Must be `"COP"` (Colombian Peso).                                             |
 | `amount`       | Amount to be paid out.                                                        |
 | `test_mode`    | Set to `true` for sandbox mode or `false` for live transactions.              |
 
@@ -32,13 +32,13 @@ If any of them is missing or invalid, the request will be rejected.
 
 ---
 
-### ⚡ PIX Fields (nested under `fields`)
+### 📱 Transfiya Fields (nested under `fields`)
 
-| JSON Key        | Description                                                                 |
-| --------------- | --------------------------------------------------------------------------- |
-| `pix_key`       | PIX key of the beneficiary (CPF, CNPJ, email, phone number, or random key). |
-| `document_type` | Type of beneficiary document. Accepted value: `CPF`.                        |
-| `document_id`   | Beneficiary document number (CPF, numbers only).                            |
+| JSON Key        | Description                                         |
+| --------------- | --------------------------------------------------- |
+| `document_type` | Type of beneficiary document. Accepted value: `CC`. |
+| `document_id`   | Beneficiary document number (Cédula de Ciudadanía). |
+| `phone_number`  | Mobile phone number linked to Transfiya .           |
 
 📝 **Important:**  
 All keys listed above must be **nested under `fields`**.
@@ -47,10 +47,10 @@ All keys listed above must be **nested under `fields`**.
 
 ## 🔍 Notes
 
-- All amounts must be provided in **Brazilian Reais (BRL)**.
+- All amounts must be provided in **Colombian Pesos (COP)**.
 - `reference_id` must be unique per payout request.
-- The `pix_key` must be valid and registered in the Brazilian PIX system.
-- Only **CPF** is supported as `document_type` for PIX payouts.
-- Invalid PIX keys or document data will cause the request to fail.
+- The `phone_number` must be registered with **Transfiya** and belong to the beneficiary.
+- Only **CC** is supported as `document_type` for Transfiya payouts.
+- Invalid document data or phone numbers will cause the request to fail.
 
 ---

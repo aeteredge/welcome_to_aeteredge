@@ -6,16 +6,15 @@
       "service": "pix_brl",
       "currency": "BRL",
       "amount": 15,
-      "test_mode": true,      
-      "fields": {
-        "cpf_number": "12345677924",
-        "document_id": "123454512"
+      "test_mode": true,
+      "customer": {
+        "reference_id": "9c1c041-b2e9-310a09e7f4fd",
+        "name": "John Wick"
       },
-      "options": {
-        "attempts_limit": 0,
-        "split_mode": false,
-        "allow_partially": false,
-        "auto_process": false
+      "fields": {
+        "pix_key": "123456*8909",
+        "document_type": "CPF",
+        "document_id": "12345678909"
       }
     }
   }

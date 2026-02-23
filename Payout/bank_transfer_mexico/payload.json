@@ -1,0 +1,23 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "service": "bank_transfer_mxn",
+      "reference_id": "64361",
+      "currency": "MXN",
+      "amount": 99997,
+      "test_mode": true,
+      "customer": {
+        "reference_id": "51443c0c-ef86-4cdf-b-95715044ba70",
+        "name": "John Wick"
+      },
+      "fields": {
+        "beneficiary_document_id": "RICJ750331HDFVMN04",
+        "bank_code": "2001",
+        "account_number": "072180011751301416",
+        "beneficiary_document_type": "CURP",
+        "account_type": "SAVINGS"
+      }
+    }
+  }
+}

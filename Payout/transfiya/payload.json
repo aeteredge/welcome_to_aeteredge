@@ -2,8 +2,8 @@
   "data": {
     "type": "payout-invoice",
     "attributes": {
-      "service": "bank_transfer_pen",
-      "currency": "PEN",
+      "service": "transfiya_cop",
+      "currency": "COP",
       "amount": 99997,
       "reference_id": "1203yhju5hjnuv54b85",
       "test_mode": true,
@@ -12,11 +12,9 @@
         "name": "John Wich"
       },
       "fields": {
-        "account_number": "01135400010004648881",
-        "beneficiary_document_id": "12345678",
-        "bank_code": "002",
-        "document_type": "DNI",
-        "account_type": "SAVINGS"
+        "document_type": "CC",
+        "document_id": "1073505526",
+        "phone_number": "+573001234567"
       }
     }
   }

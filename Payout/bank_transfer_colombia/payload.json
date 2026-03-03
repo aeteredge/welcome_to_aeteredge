@@ -1,0 +1,25 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "reference_id": "64361",
+      "service": "bank_transfer_cop",      
+      "currency": "COP",
+      "amount": 10000,
+      "test_mode": true,
+      "customer": {
+        "reference_id": "51443c0c-ef86-4cdf-b-95715044ba70",
+        "name": "John Wick",
+        "email": "johnwick@gmail.com",
+        "phone": "+573041093694"
+      },
+      "fields": {
+        "document_type": "CC",
+        "beneficiary_document_id": "1073505526",
+        "bank_code": "1007",
+        "account_number": "04800001840",
+        "account_type": "SAVINGS"
+      }
+    }
+  }
+}

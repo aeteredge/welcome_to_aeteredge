@@ -1,0 +1,25 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "reference_id": "64361",
+      "service": "bank_transfer_bob",
+      "currency": "BOB",
+      "amount": 10000,
+      "test_mode": true,
+      "customer": {
+        "reference_id": "51443c0c-ef86-4cdf-b-95715044ba70",
+        "name": "John Wick",
+        "email": "johnwick@gmail.com",
+        "phone": "+56557777477"
+      },
+      "fields": {
+        "account_type": "SAVINGS",
+        "bank_code": "1",
+        "beneficiary_document_type": "CI",
+        "bank_account": "7884321419",
+        "beneficiary_document_id": "8952413"
+      }
+    }
+  }
+}

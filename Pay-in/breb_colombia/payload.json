@@ -1,22 +1,30 @@
 {
   "data": {
-    "type": "payment-invoices",
+    "type": "payment-invoice",
     "attributes": {
-      "reference_id": "111R7S26991656",
-      "service": "mobile_money_usd_hpp",
-      "currency": "USD",
-      "amount": 120,
-      "description": "Mexico",
+      "reference_id": "11177577156",
+      "service": "breb_cop_hpp",
+      "currency": "COP",
+      "amount": 10000,
       "test_mode": true,
+      "flow": "charge",
+      "gateway_options": {
+        "cardgate": {
+          "tokenize": false
+        }
+      },
       "customer": {
         "reference_id": "c592d-4b1dd",
-        "individual_tax_id": "4x089587",
         "name": "John Wick",
         "email": "johnwick@gmail.com",
-        "phone": "549112***6789",
+        "phone": "5491122156789",
         "metadata": {
           "ip": "190.16.34.87"
         }
+      },
+      "service_fields": {
+        "document_type": "CC",
+        "document_id": "42089587"
       },
       "return_urls": {
         "success": "https://example.com/thank-you-page",

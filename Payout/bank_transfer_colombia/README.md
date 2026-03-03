@@ -191,6 +191,4 @@ The `bank_code` field must be sent as a **string** and must match one of the sup
 - All amounts must be provided in **Colombian Pesos (COP)**.
 - `reference_id` must be unique per payout request.
 - The `bank_code` must be sent as a **string**, even when numeric.
-- Some institutions may have both a **full code** (e.g., `1007`) and a **short code** (e.g., `007`). Use the one required by your integration.
-- Only banks listed in this document are supported.
 - Invalid or unsupported bank codes will cause the request to fail.

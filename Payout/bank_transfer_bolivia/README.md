@@ -206,6 +206,5 @@ The `bank_code` field must be sent as a **string** and must match one of the sup
 - All amounts must be provided in **Bolivianos (BOB)**.
 - `reference_id` must be unique per payout request.
 - The `bank_code` must be sent as a **string**, even when numeric.
-- Only banks listed in this document are supported.
 - Invalid or unsupported bank codes will cause the request to fail.
-```
+

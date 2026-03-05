@@ -3,7 +3,7 @@
     "type": "payment-invoices",
     "attributes": {
       "reference_id": "118774776156",
-      "service": "wallet_aggregated_mxn_hpp",
+      "service": "codi_mxn_hpp",
       "currency": "MXN",
       "amount": 9897,
       "description": "Mexico",

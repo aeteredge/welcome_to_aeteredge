@@ -1,6 +1,6 @@
 # 📄 Payload for `payment-invoices` (Mexico – MX)
 
-This document outlines the structure and required fields for the `payment-invoices` payload using the **`bank_transfer_mxn_hpp`** service, which supports **bank transfer pay-ins in Mexico (MXN)** through a **Hosted Payment Page (HPP)**.
+This document outlines the structure and required fields for the `payment-invoices` payload using the **`spei_mxn_hpp`** service, which supports **bank transfer pay-ins in Mexico (MXN)** through a **Hosted Payment Page (HPP)**.
 
 ---
 
@@ -16,7 +16,7 @@ If any of them is missing or invalid, the request will be rejected.
 | JSON Key              | Description                                         |
 | --------------------- | --------------------------------------------------- |
 | `reference_id`        | Unique identifier for the payment request.          |
-| `service`             | Must be `"bank_transfer_mxn_hpp"`.                  |
+| `service`             | Must be `"spei_mxn_hpp"`.                  |
 | `currency`            | Must be `"MXN"` (Mexican Peso).                     |
 | `amount`              | Amount to be paid.                                  |
 | `description`         | Description of the payment purpose.                 |

@@ -3,7 +3,7 @@
     "type": "payment-invoices",
     "attributes": {
       "reference_id": "1117276156",
-      "service": "bank_transfer_mxn_hpp",
+      "service": "spei_mxn_hpp",
       "currency": "MXN",
       "amount": 9897,
       "description": "Mexico",

@@ -28,14 +28,6 @@ If any of them is missing, the request will be rejected.
 
 ---
 
-### ⚙️ Gateway Options (nested under `gateway_options.cardgate`)
-
-| JSON Key   | Description                                                             |
-| ---------- | ----------------------------------------------------------------------- |
-| `tokenize` | Set to `true` to tokenize the card for future usage, otherwise `false`. |
-
----
-
 ### 👤 Customer (nested under `customer`)
 
 | JSON Key       | Description                        |
@@ -54,6 +46,14 @@ If any of them is missing, the request will be rejected.
 | --------------- | ------------------------------------------------ |
 | `document_type` | Type of customer document. Accepted value: `CC`. |
 | `document_id`   | Customer document number (Cédula de Ciudadanía). |
+
+---
+
+### ⚙️ Gateway Options (nested under `gateway_options.cardgate`)
+
+| JSON Key   | Description                                                             |
+| ---------- | ----------------------------------------------------------------------- |
+| `tokenize` | Set to `true` to tokenize the card for future usage, otherwise `false`. |
 
 ---
 

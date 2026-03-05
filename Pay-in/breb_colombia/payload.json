@@ -8,11 +8,6 @@
       "amount": 10000,
       "test_mode": true,
       "flow": "charge",
-      "gateway_options": {
-        "cardgate": {
-          "tokenize": false
-        }
-      },
       "customer": {
         "reference_id": "c592d-4b1dd",
         "name": "John Wick",
@@ -32,6 +27,11 @@
         "fail": "https://example.com/sorry-page.com"
       },
       "callback_url": "https://example.com"
+    },
+    "gateway_options": {
+      "cardgate": {
+        "tokenize": false
+      }
     }
   }
 }

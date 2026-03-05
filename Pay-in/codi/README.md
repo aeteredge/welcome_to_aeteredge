@@ -1,6 +1,6 @@
 # 📄 Payload for `payment-invoices` (Mexico – MX)
 
-This document outlines the structure and required fields for the `payment-invoices` payload using the **`wallet_aggregated_mxn_hpp`** service, which supports **aggregated wallet pay-ins in Mexico (MXN)** through a **Hosted Payment Page (HPP)**.
+This document outlines the structure and required fields for the `payment-invoices` payload using the **`codi_mxn_hpp`** service, which supports **aggregated wallet pay-ins in Mexico (MXN)** through a **Hosted Payment Page (HPP)**.
 
 ---
 
@@ -16,7 +16,7 @@ If any of them is missing or invalid, the request will be rejected.
 | JSON Key              | Description                                         |
 | --------------------- | --------------------------------------------------- |
 | `reference_id`        | Unique identifier for the payment request.          |
-| `service`             | Must be `"wallet_aggregated_mxn_hpp"`.              |
+| `service`             | Must be `"codi_mxn_hpp"`.              |
 | `currency`            | Must be `"MXN"` (Mexican Peso).                     |
 | `amount`              | Amount to be paid.                                  |
 | `description`         | Description of the payment purpose.                 |

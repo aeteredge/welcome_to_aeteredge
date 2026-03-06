@@ -1,0 +1,22 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "reference_id": "26768938-1c4a-412172882fd",
+      "service": "breb_cop",
+      "currency": "COP",
+      "amount": 1000,
+      "test_mode": true,
+      "customer": {
+        "reference_id": "a072c00b-9dac4-c692f9c2fbd2",
+        "name": "John Wick"
+      },      
+      "fields": {
+        "document_type": "CC",
+        "document_id": "1073505526",
+        "phone_number": "+573041093694",
+        "destination_key": "579889**2105"
+      }
+    }
+  }
+}

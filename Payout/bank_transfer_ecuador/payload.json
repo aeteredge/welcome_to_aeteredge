@@ -1,0 +1,24 @@
+{
+  "data": {
+    "type": "payout-invoice",
+    "attributes": {
+      "reference_id": "8aff755c-8bb9-f88f7d688",
+      "service": "bank_transfer_usd",
+      "currency": "USD",
+      "amount": 10,
+       "test_mode": true,
+      "customer": {
+        "reference_id": "d84573a1-fbde3bd27",
+        "name": "John Wick",
+        "phone": "+5930999000000"
+      },     
+      "fields": {
+        "account_number": "7884321419",
+        "account_type": "CHECKING",
+        "bank_code": "0010",
+        "beneficiary_document_id": "2234583876",
+        "beneficiary_document_type": "CC"
+      }
+    }
+  }
+}

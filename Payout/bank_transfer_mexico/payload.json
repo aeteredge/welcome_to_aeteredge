@@ -9,7 +9,8 @@
       "test_mode": true,
       "customer": {
         "reference_id": "51443c0c-ef86-4cdf-b-95715044ba70",
-        "name": "John Wick"
+        "name": "John Wick",
+        "email": "johnwick@gmail.com"
       },
       "fields": {
         "beneficiary_document_id": "RICJ750331HDFVMN04",

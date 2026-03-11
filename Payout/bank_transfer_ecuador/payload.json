@@ -10,6 +10,7 @@
       "customer": {
         "reference_id": "d84573a1-fbde3bd27",
         "name": "John Wick",
+        "email": "johnwick@gmail.com",
         "phone": "+5930999000000"
       },     
       "fields": {

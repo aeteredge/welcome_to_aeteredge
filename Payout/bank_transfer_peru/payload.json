@@ -9,7 +9,8 @@
       "test_mode": true,
       "customer": {
         "reference_id": "c40d17f4-44L1f3ef6af31",
-        "name": "John Wich"
+        "name": "John Wich",
+        "email": "johnwick@gmail.com"
       },
       "fields": {
         "account_number": "01135400010004648881",

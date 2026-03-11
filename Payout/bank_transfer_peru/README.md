@@ -29,6 +29,7 @@ If any of them is missing or invalid, the request will be rejected.
 | -------------- | ----------------------------------------- |
 | `reference_id` | Unique identifier of the customer.        |
 | `name`         | Full name of the customer or beneficiary. |
+| `email`        | Email address of the customer.            |
 
 ---
 
